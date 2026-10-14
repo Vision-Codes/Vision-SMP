@@ -1,264 +1,199 @@
-[14:44:09] [ServerMain/INFO]: [bootstrap] Running Java 26 (Java HotSpot(TM) 64-Bit Server VM 26+35-2893; Oracle Corporation null) on Windows 11 10.0 (amd64)
-[14:44:09] [ServerMain/INFO]: [bootstrap] Loading Paper 26.3-181-main@cc7ee9a (2026-10-13T16:20:13Z) for Minecraft 26.3
-[14:44:09] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
-[14:44:09] [ServerMain/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\org\ow2\asm\asm\9.8\asm-9.8.jar
-[14:44:09] [ServerMain/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\org\ow2\asm\asm-commons\9.8\asm-commons-9.8.jar
-[14:44:09] [ServerMain/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\de\crazydev22\slimjar\jar-relocator\2.1.9\jar-relocator-2.1.9.jar
-[14:44:09] [ServerMain/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\com\fulcrumgenomics\jlibdeflate\0.2.0\relocated\Iris\jlibdeflate-0.2.0.jar
-[14:44:09] [ForkJoinPool.commonPool-worker-11/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\jaxen\jaxen\2.0.6\relocated\Iris\jaxen-2.0.6.jar
-[14:44:09] [ForkJoinPool.commonPool-worker-4/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\io\papermc\paperlib\1.0.8\relocated\Iris\paperlib-1.0.8.jar
-[14:44:09] [ForkJoinPool.commonPool-worker-5/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\net\bytebuddy\byte-buddy-agent\1.18.11\relocated\Iris\byte-buddy-agent-1.18.11.jar
-[14:44:09] [ServerMain/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\org\zeroturnaround\zt-zip\1.18.2\relocated\Iris\zt-zip-1.18.2.jar
-[14:44:09] [ForkJoinPool.commonPool-worker-7/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\org\bstats\bstats-base\3.2.1\relocated\Iris\bstats-base-3.2.1.jar
-[14:44:09] [ForkJoinPool.commonPool-worker-7/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\org\bstats\bstats-bukkit\3.2.1\relocated\Iris\bstats-bukkit-3.2.1.jar
-[14:44:09] [ForkJoinPool.commonPool-worker-14/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\at\yawk\lz4\lz4-java\1.8.1\relocated\Iris\lz4-java-1.8.1.jar
-[14:44:09] [ForkJoinPool.commonPool-worker-3/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\commons-io\commons-io\2.22.0\relocated\Iris\commons-io-2.22.0.jar
-[14:44:09] [ForkJoinPool.commonPool-worker-11/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\org\dom4j\dom4j\2.2.0\relocated\Iris\dom4j-2.2.0.jar
-[14:44:09] [ForkJoinPool.commonPool-worker-8/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\org\apache\commons\commons-lang3\3.20.0\relocated\Iris\commons-lang3-3.20.0.jar
-[14:44:09] [ForkJoinPool.commonPool-worker-13/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\com\google\errorprone\error_prone_annotations\2.49.0\relocated\Iris\error_prone_annotations-2.49.0.jar
-[14:44:09] [ForkJoinPool.commonPool-worker-2/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\org\jspecify\jspecify\1.0.0\relocated\Iris\jspecify-1.0.0.jar
-[14:44:09] [ForkJoinPool.commonPool-worker-2/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\com\github\ben-manes\caffeine\caffeine\3.2.4\relocated\Iris\caffeine-3.2.4.jar
-[14:44:09] [ForkJoinPool.commonPool-worker-13/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\com\google\code\gson\gson\2.14.0\relocated\Iris\gson-2.14.0.jar
-[14:44:09] [ForkJoinPool.commonPool-worker-9/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\com\googlecode\concurrentlinkedhashmap\concurrentlinkedhashmap-lru\1.4.2\relocated\Iris\concurrentlinkedhashmap-lru-1.4.2.jar
-[14:44:09] [ForkJoinPool.commonPool-worker-12/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\org\jetbrains\annotations\24.0.1\relocated\Iris\annotations-24.0.1.jar
-[14:44:09] [ForkJoinPool.commonPool-worker-1/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\net\kyori\examination-api\1.3.0\relocated\Iris\examination-api-1.3.0.jar
-[14:44:09] [ForkJoinPool.commonPool-worker-12/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\org\ow2\asm\asm\9.10.1\relocated\Iris\asm-9.10.1.jar
-[14:44:09] [ForkJoinPool.commonPool-worker-12/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\com\dfsek\paralithic\0.8.1\relocated\Iris\paralithic-0.8.1.jar
-[14:44:09] [ForkJoinPool.commonPool-worker-1/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\net\kyori\examination-string\1.3.0\relocated\Iris\examination-string-1.3.0.jar
-[14:44:09] [ForkJoinPool.commonPool-worker-1/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\net\kyori\adventure-key\4.26.1\relocated\Iris\adventure-key-4.26.1.jar
-[14:44:09] [ForkJoinPool.commonPool-worker-1/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\net\kyori\adventure-text-minimessage\4.26.1\relocated\Iris\adventure-text-minimessage-4.26.1.jar
-[14:44:09] [ForkJoinPool.commonPool-worker-15/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\net\java\dev\jna\jna\5.17.0\relocated\Iris\jna-5.17.0.jar
-[14:44:09] [ForkJoinPool.commonPool-worker-6/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\net\bytebuddy\byte-buddy\1.18.11\relocated\Iris\byte-buddy-1.18.11.jar
-[14:44:09] [ForkJoinPool.commonPool-worker-1/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\net\kyori\adventure-text-serializer-legacy\4.26.1\relocated\Iris\adventure-text-serializer-legacy-4.26.1.jar
-[14:44:09] [ForkJoinPool.commonPool-worker-1/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\net\kyori\adventure-text-serializer-plain\4.26.1\relocated\Iris\adventure-text-serializer-plain-4.26.1.jar
-[14:44:09] [ForkJoinPool.commonPool-worker-1/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\net\kyori\adventure-api\4.26.1\relocated\Iris\adventure-api-4.26.1.jar
-[14:44:09] [ForkJoinPool.commonPool-worker-15/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\net\java\dev\jna\jna-platform\5.17.0\relocated\Iris\jna-platform-5.17.0.jar
-[14:44:09] [ForkJoinPool.commonPool-worker-15/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\org\slf4j\slf4j-api\2.0.17\relocated\Iris\slf4j-api-2.0.17.jar
-[14:44:09] [ForkJoinPool.commonPool-worker-15/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\com\github\oshi\oshi-core\6.9.0\relocated\Iris\oshi-core-6.9.0.jar
-[14:44:09] [ForkJoinPool.commonPool-worker-10/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\it\unimi\dsi\fastutil\8.5.18\relocated\Iris\fastutil-8.5.18.jar
-[14:44:09] [ServerMain/INFO]: [PluginInitializerManager] Initialized 5 plugins
-[14:44:09] [ServerMain/INFO]: [PluginInitializerManager] Paper plugins (1):
- - Iris (4.3.2-26.2)
-[14:44:09] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (4):
- - ItemsAdder (4.1.0-beta-nativepackets-3), LuckPerms (5.5.87), Multiverse-Core (5.8.1), vision-core (1.0.0)
-[14:44:10] [ServerMain/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\org\ow2\asm\asm\9.8\asm-9.8.jar
-[14:44:10] [ServerMain/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\org\ow2\asm\asm-commons\9.8\asm-commons-9.8.jar
-[14:44:10] [ServerMain/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\de\crazydev22\slimjar\jar-relocator\2.1.9\jar-relocator-2.1.9.jar
-[14:44:10] [ForkJoinPool.commonPool-worker-9/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\io\papermc\paperlib\1.0.8\relocated\Iris\paperlib-1.0.8.jar
-[14:44:10] [ForkJoinPool.commonPool-worker-6/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\net\bytebuddy\byte-buddy-agent\1.18.11\relocated\Iris\byte-buddy-agent-1.18.11.jar
-[14:44:10] [ForkJoinPool.commonPool-worker-11/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\org\zeroturnaround\zt-zip\1.18.2\relocated\Iris\zt-zip-1.18.2.jar
-[14:44:10] [ServerMain/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\com\fulcrumgenomics\jlibdeflate\0.2.0\relocated\Iris\jlibdeflate-0.2.0.jar
-[14:44:10] [ForkJoinPool.commonPool-worker-3/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\com\googlecode\concurrentlinkedhashmap\concurrentlinkedhashmap-lru\1.4.2\relocated\Iris\concurrentlinkedhashmap-lru-1.4.2.jar
-[14:44:10] [ForkJoinPool.commonPool-worker-4/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\org\dom4j\dom4j\2.2.0\relocated\Iris\dom4j-2.2.0.jar
-[14:44:10] [ForkJoinPool.commonPool-worker-2/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\at\yawk\lz4\lz4-java\1.8.1\relocated\Iris\lz4-java-1.8.1.jar
-[14:44:10] [ForkJoinPool.commonPool-worker-7/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\org\jetbrains\annotations\24.0.1\relocated\Iris\annotations-24.0.1.jar
-[14:44:10] [ForkJoinPool.commonPool-worker-5/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\jaxen\jaxen\2.0.6\relocated\Iris\jaxen-2.0.6.jar
-[14:44:10] [ForkJoinPool.commonPool-worker-12/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\org\bstats\bstats-base\3.2.1\relocated\Iris\bstats-base-3.2.1.jar
-[14:44:10] [ForkJoinPool.commonPool-worker-12/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\org\bstats\bstats-bukkit\3.2.1\relocated\Iris\bstats-bukkit-3.2.1.jar
-[14:44:10] [ForkJoinPool.commonPool-worker-1/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\commons-io\commons-io\2.22.0\relocated\Iris\commons-io-2.22.0.jar
-[14:44:10] [ForkJoinPool.commonPool-worker-6/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\org\apache\commons\commons-lang3\3.20.0\relocated\Iris\commons-lang3-3.20.0.jar
-[14:44:10] [ForkJoinPool.commonPool-worker-7/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\org\ow2\asm\asm\9.10.1\relocated\Iris\asm-9.10.1.jar
-[14:44:10] [ForkJoinPool.commonPool-worker-15/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\org\jspecify\jspecify\1.0.0\relocated\Iris\jspecify-1.0.0.jar
-[14:44:10] [ForkJoinPool.commonPool-worker-7/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\com\dfsek\paralithic\0.8.1\relocated\Iris\paralithic-0.8.1.jar
-[14:44:10] [ForkJoinPool.commonPool-worker-15/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\com\github\ben-manes\caffeine\caffeine\3.2.4\relocated\Iris\caffeine-3.2.4.jar
-[14:44:10] [ForkJoinPool.commonPool-worker-10/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\net\kyori\examination-api\1.3.0\relocated\Iris\examination-api-1.3.0.jar
-[14:44:10] [ForkJoinPool.commonPool-worker-9/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\com\google\errorprone\error_prone_annotations\2.49.0\relocated\Iris\error_prone_annotations-2.49.0.jar
-[14:44:10] [ForkJoinPool.commonPool-worker-9/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\com\google\code\gson\gson\2.14.0\relocated\Iris\gson-2.14.0.jar
-[14:44:10] [ForkJoinPool.commonPool-worker-10/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\net\kyori\examination-string\1.3.0\relocated\Iris\examination-string-1.3.0.jar
-[14:44:10] [ForkJoinPool.commonPool-worker-10/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\net\kyori\adventure-key\4.26.1\relocated\Iris\adventure-key-4.26.1.jar
-[14:44:10] [ForkJoinPool.commonPool-worker-10/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\net\kyori\adventure-text-minimessage\4.26.1\relocated\Iris\adventure-text-minimessage-4.26.1.jar
-[14:44:10] [ForkJoinPool.commonPool-worker-14/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\net\java\dev\jna\jna\5.17.0\relocated\Iris\jna-5.17.0.jar
-[14:44:10] [ForkJoinPool.commonPool-worker-10/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\net\kyori\adventure-text-serializer-legacy\4.26.1\relocated\Iris\adventure-text-serializer-legacy-4.26.1.jar
-[14:44:10] [ForkJoinPool.commonPool-worker-10/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\net\kyori\adventure-text-serializer-plain\4.26.1\relocated\Iris\adventure-text-serializer-plain-4.26.1.jar
-[14:44:10] [ForkJoinPool.commonPool-worker-10/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\net\kyori\adventure-api\4.26.1\relocated\Iris\adventure-api-4.26.1.jar
-[14:44:10] [ForkJoinPool.commonPool-worker-13/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\net\bytebuddy\byte-buddy\1.18.11\relocated\Iris\byte-buddy-1.18.11.jar
-[14:44:10] [ForkJoinPool.commonPool-worker-14/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\net\java\dev\jna\jna-platform\5.17.0\relocated\Iris\jna-platform-5.17.0.jar
-[14:44:10] [ForkJoinPool.commonPool-worker-14/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\org\slf4j\slf4j-api\2.0.17\relocated\Iris\slf4j-api-2.0.17.jar
-[14:44:10] [ForkJoinPool.commonPool-worker-14/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\com\github\oshi\oshi-core\6.9.0\relocated\Iris\oshi-core-6.9.0.jar
-[14:44:10] [ForkJoinPool.commonPool-worker-8/INFO]: [Iris] Loaded library plugins\Iris\cache\libraries\it\unimi\dsi\fastutil\8.5.18\relocated\Iris\fastutil-8.5.18.jar
-[14:44:48] [ServerMain/INFO]: [Iris] Iris startup datapack is UPDATED at C:\Users\thomm\OneDrive\Bureaublad\vision-smp\world\datapacks\iris
-[14:44:51] [DataConverter MCTypeRegistry init thread/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
-[14:44:52] [ServerMain/INFO]: [com.destroystokyo.paper.profile.PaperServicesDiscoveryService] Environment: Environment[discoveryUrl=https://discovery.minecraftservices.com/minecraft/client, name=PROD]
-[14:44:52] [DataConverter MCTypeRegistry init thread/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 366,6ms
-[14:44:54] [Worker-Main-4/INFO]: Loaded 1866 advancements
-[14:44:54] [Server thread/INFO]: Starting minecraft server version 26.3
-[14:44:54] [Server thread/INFO]: Loading properties
-[14:44:54] [Server thread/INFO]: This server is running Paper version 26.3-181-main@cc7ee9a (2026-10-13T16:20:13Z) (Implementing API version 26.3.build.181-stable)
-[14:44:54] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
-[14:44:54] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[14:44:54] [Server thread/INFO]: Using 4 threads for Netty based IO
-[14:44:54] [Server thread/INFO]: [MoonriseCommon] Paper is using 4 worker threads, 1 I/O threads
-[14:44:54] [Server thread/INFO]: Default game type: SURVIVAL
-[14:44:54] [Server thread/INFO]: Generating keypair
-[14:44:54] [Server thread/INFO]: Starting Minecraft server on *:25565
-[14:44:55] [Server thread/INFO]: Paper: Using Java compression from Velocity.
-[14:44:55] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
-[14:44:55] [Server thread/INFO]: [SpigotLibraryLoader] [ItemsAdder] Loading 1 libraries... please wait
-[14:44:55] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://maven-central.storage-download.googleapis.com/maven2/io/netty/netty-codec-http/4.1.118.Final/netty-codec-http-4.1.118.Final.pom
-[14:44:55] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://maven-central.storage-download.googleapis.com/maven2/io/netty/netty-parent/4.1.118.Final/netty-parent-4.1.118.Final.pom
-[14:44:55] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/sonatype/oss/oss-parent/9/oss-parent-9.pom
-[14:44:56] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://maven-central.storage-download.googleapis.com/maven2/io/netty/netty-common/4.1.118.Final/netty-common-4.1.118.Final.pom
-[14:44:56] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://maven-central.storage-download.googleapis.com/maven2/io/netty/netty-buffer/4.1.118.Final/netty-buffer-4.1.118.Final.pom
-[14:44:56] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://maven-central.storage-download.googleapis.com/maven2/io/netty/netty-transport/4.1.118.Final/netty-transport-4.1.118.Final.pom
-[14:44:56] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://maven-central.storage-download.googleapis.com/maven2/io/netty/netty-resolver/4.1.118.Final/netty-resolver-4.1.118.Final.pom
-[14:44:56] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://maven-central.storage-download.googleapis.com/maven2/io/netty/netty-codec/4.1.118.Final/netty-codec-4.1.118.Final.pom
-[14:44:56] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://maven-central.storage-download.googleapis.com/maven2/io/netty/netty-handler/4.1.118.Final/netty-handler-4.1.118.Final.pom
-[14:44:56] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://maven-central.storage-download.googleapis.com/maven2/io/netty/netty-transport-native-unix-common/4.1.118.Final/netty-transport-native-unix-common-4.1.118.Final.pom
-[14:44:57] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://maven-central.storage-download.googleapis.com/maven2/io/netty/netty-codec-http/4.1.118.Final/netty-codec-http-4.1.118.Final.jar
-[14:44:57] [BasicRepositoryConnector-maven-central.storage-download.googleapis.com-0-1/INFO]: [SpigotLibraryLoader] Downloading https://maven-central.storage-download.googleapis.com/maven2/io/netty/netty-buffer/4.1.118.Final/netty-buffer-4.1.118.Final.jar
-[14:44:57] [BasicRepositoryConnector-maven-central.storage-download.googleapis.com-0-0/INFO]: [SpigotLibraryLoader] Downloading https://maven-central.storage-download.googleapis.com/maven2/io/netty/netty-common/4.1.118.Final/netty-common-4.1.118.Final.jar
-[14:44:57] [BasicRepositoryConnector-maven-central.storage-download.googleapis.com-0-4/INFO]: [SpigotLibraryLoader] Downloading https://maven-central.storage-download.googleapis.com/maven2/io/netty/netty-codec/4.1.118.Final/netty-codec-4.1.118.Final.jar
-[14:44:57] [BasicRepositoryConnector-maven-central.storage-download.googleapis.com-0-2/INFO]: [SpigotLibraryLoader] Downloading https://maven-central.storage-download.googleapis.com/maven2/io/netty/netty-transport/4.1.118.Final/netty-transport-4.1.118.Final.jar
-[14:44:57] [BasicRepositoryConnector-maven-central.storage-download.googleapis.com-0-1/INFO]: [SpigotLibraryLoader] Downloading https://maven-central.storage-download.googleapis.com/maven2/io/netty/netty-handler/4.1.118.Final/netty-handler-4.1.118.Final.jar
-[14:44:57] [BasicRepositoryConnector-maven-central.storage-download.googleapis.com-0-3/INFO]: [SpigotLibraryLoader] Downloading https://maven-central.storage-download.googleapis.com/maven2/io/netty/netty-resolver/4.1.118.Final/netty-resolver-4.1.118.Final.jar
-[14:44:57] [BasicRepositoryConnector-maven-central.storage-download.googleapis.com-0-3/INFO]: [SpigotLibraryLoader] Downloading https://maven-central.storage-download.googleapis.com/maven2/io/netty/netty-transport-native-unix-common/4.1.118.Final/netty-transport-native-unix-common-4.1.118.Final.jar
-[14:44:57] [Server thread/INFO]: [SpigotLibraryLoader] [ItemsAdder] Loaded library C:\Users\thomm\OneDrive\Bureaublad\vision-smp\libraries\io\netty\netty-codec-http\4.1.118.Final\netty-codec-http-4.1.118.Final.jar
-[14:44:57] [Server thread/INFO]: [SpigotLibraryLoader] [ItemsAdder] Loaded library C:\Users\thomm\OneDrive\Bureaublad\vision-smp\libraries\io\netty\netty-common\4.1.118.Final\netty-common-4.1.118.Final.jar
-[14:44:57] [Server thread/INFO]: [SpigotLibraryLoader] [ItemsAdder] Loaded library C:\Users\thomm\OneDrive\Bureaublad\vision-smp\libraries\io\netty\netty-buffer\4.1.118.Final\netty-buffer-4.1.118.Final.jar
-[14:44:57] [Server thread/INFO]: [SpigotLibraryLoader] [ItemsAdder] Loaded library C:\Users\thomm\OneDrive\Bureaublad\vision-smp\libraries\io\netty\netty-transport\4.1.118.Final\netty-transport-4.1.118.Final.jar
-[14:44:57] [Server thread/INFO]: [SpigotLibraryLoader] [ItemsAdder] Loaded library C:\Users\thomm\OneDrive\Bureaublad\vision-smp\libraries\io\netty\netty-resolver\4.1.118.Final\netty-resolver-4.1.118.Final.jar
-[14:44:57] [Server thread/INFO]: [SpigotLibraryLoader] [ItemsAdder] Loaded library C:\Users\thomm\OneDrive\Bureaublad\vision-smp\libraries\io\netty\netty-codec\4.1.118.Final\netty-codec-4.1.118.Final.jar
-[14:44:57] [Server thread/INFO]: [SpigotLibraryLoader] [ItemsAdder] Loaded library C:\Users\thomm\OneDrive\Bureaublad\vision-smp\libraries\io\netty\netty-handler\4.1.118.Final\netty-handler-4.1.118.Final.jar
-[14:44:57] [Server thread/INFO]: [SpigotLibraryLoader] [ItemsAdder] Loaded library C:\Users\thomm\OneDrive\Bureaublad\vision-smp\libraries\io\netty\netty-transport-native-unix-common\4.1.118.Final\netty-transport-native-unix-common-4.1.118.Final.jar
-[14:44:57] [Server thread/INFO]: [LuckPerms] Loading server plugin LuckPerms v5.5.87
-[14:44:57] [Server thread/INFO]: [LuckPerms] Loading configuration...
-[14:44:57] [Server thread/INFO]: [ItemsAdder] Loading server plugin ItemsAdder v4.1.0-beta-nativepackets-3
-[14:44:57] [Server thread/INFO]: [Iris] Loading server plugin Iris v4.3.2-26.2
-[14:44:57] [Server thread/INFO]: [vision-core] Loading server plugin vision-core v1.0.0
-[14:44:57] [Server thread/INFO]: [CoreLogging] Loading server plugin Multiverse-Core v5.8.1
-[14:44:57] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.5.87
-[14:44:57] [Server thread/INFO]:         __    
-[14:44:57] [Server thread/INFO]:   |    |__)   LuckPerms v5.5.87
-[14:44:57] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
-[14:44:57] [Server thread/INFO]: 
-[14:44:58] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
-[14:44:58] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
-[14:44:58] [Server thread/INFO]: [LuckPerms] Performing initial data load...
-[14:44:58] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 659ms)
-[14:44:58] [Server thread/INFO]: [Iris] Enabling Iris v4.3.2-26.2
-[14:44:59] [Server thread/INFO]: [Iris]: SIMD: scalar kernels active; add --add-modules jdk.incubator.vector to JVM flags to enable vectorized generation kernels
-[14:44:59] [Server thread/WARN]: [Iris]: Updating spigot.yml timeout-time: 60 -> 300 (5 minutes)
-[14:44:59] [Server thread/WARN]: [Iris]: You can disable this change (autoconfigureServer) in Iris settings, then change back the value.
-[14:45:16] [Server thread/INFO]: [Iris]: Paper loaded the Iris datapack during bootstrap; skipping the legacy startup install.
-[14:45:22] [Server thread/INFO]: [Iris]: External datapacks match the persisted startup validation; remote resolution and full revalidation were skipped.
-[14:45:23] [Server thread/INFO]: [Iris]: Custom Biomes: 529
-[14:45:23] [Server thread/INFO]: [Iris]: 
-
-                 --=---                          -=   ###
-        -==#########         ***                 -=#  ###     Iris, Dimension Engine [4.3]
-      =##########=     ****%%%%%%%****          -==##  ##     Version: 4.3.2-26.2
-     =########=-     ***%%%%@@@@@%%%%***        -==######     By: Volmit Software (Arcane Arts)
-    =#######=-      **%%%@@@@@@@@@@@%%%**       -=#######     Web: VolmitSoftware.com
-    #######=-       **%%@@@@@( )@@@@@%%**       -=#######     Server: 26.3-181-cc7ee9a
-    #######=-       **%%%@@@@@@@@@@@%%%**      -=#######=     Java: 26 | Date: 2026-10-14
-    ######==-        ***%%%%@@@@@%%%%***     -=########=      Commit: be0cd567ed9109bdbcc5b19931121d5ad0b0ed2a/development
-    ##  ##==-          ****%%%%%%%****     =##########=  
-    ###  #=-                 ***         #########==-    
-    ###   =-                          ---=--             
-
-[14:45:23] [Server thread/INFO]: [Iris]: 0 Conflicts found
-[14:45:23] [Server thread/INFO]: [Iris]: Runtime Injection
-[14:45:23] [Server thread/INFO]: [Iris]: - Deferred to the first world load. Set general.eagerRuntimeInjection to verify it during startup.
-[14:45:23] [Server thread/INFO]: [Iris]: Java Runtime
-[14:45:23] [Server thread/INFO]: [Iris]: - Running Java 26. Iris is tested primarily on Java 25.
-[14:45:23] [Server thread/INFO]: [Iris]: Iris is running Stable
-[14:45:24] [ForkJoinPool.commonPool-worker-13/INFO]: [Iris]: Custom Dimensions: 2
-[14:45:24] [ForkJoinPool.commonPool-worker-13/INFO]: [Iris]:   overworld v4015
-[14:45:24] [ForkJoinPool.commonPool-worker-13/INFO]: [Iris]:   underworld v4014
-[14:45:27] [Server thread/INFO]: [Iris]: Reused persisted validation for 2 unchanged Iris pack(s); full pack parsing was skipped.
-[14:45:27] [Server thread/INFO]: [Iris]: Enabled in 28250ms (bootstrap=326ms services=61ms serverConfig=17060ms datapacks=5936ms safeguard=1672ms splash=47ms tempSweep=18ms serviceEnable=68ms packValidation=3052ms startupTasks=7ms)
-[14:45:27] [Server thread/INFO]: [Iris]: Slowest services: JigsawStudioService=22ms CommandSVC=6ms IrisEngineSVC=3ms
-[14:45:27] [Server thread/INFO]: Preparing level "world"
-[14:45:27] [Server thread/INFO]: [Iris]: Installing Java Agent...
-[14:45:27] [Server thread/INFO]: [Iris]: Note: JVM [Attach Listener/ERROR] [STDERR] warning lines during this step are expected and not Iris errors.
-[14:45:27] [Attach Listener/ERROR]: [STDERR] [sun.instrument.InstrumentationImpl] WARNING: A Java agent has been loaded dynamically (C:\Users\thomm\OneDrive\Bureaublad\vision-smp\plugins\Iris\agent.jar)
-WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
-WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
-WARNING: Dynamic loading of agents will be disallowed by default in a future release
-[14:45:57] [Server thread/INFO]: [Iris]: Loading 0 prefetch jigsaw-pieces
-[14:45:57] [Server thread/INFO]: [Iris]: Loading 0 prefetch spawners
-[14:45:57] [Server thread/INFO]: [Iris]: Loading 0 prefetch objects
-[14:45:57] [Server thread/INFO]: [Iris]: Loading 0 prefetch loot
-[14:45:57] [Server thread/INFO]: [Iris]: Loading 12 prefetch regions
-[14:45:57] [Server thread/INFO]: [Iris]: Loading 390 prefetch biomes
-[14:45:58] [Server thread/INFO]: [Iris]: Loading 319 prefetch blocks
-[14:45:58] [Server thread/INFO]: [Iris]: Loading 0 prefetch image-maps
-[14:45:58] [Server thread/INFO]: [Iris]: Loading 0 prefetch structures
-[14:45:58] [Server thread/INFO]: [Iris]: Loading 1 prefetch dimensions
-[14:45:58] [Server thread/INFO]: [Iris]: Loading 22 prefetch generators
-[14:45:58] [Server thread/INFO]: [Iris]: Loading 0 prefetch images
-[14:45:58] [Server thread/INFO]: [Iris]: Loading 0 prefetch markers
-[14:45:58] [Server thread/INFO]: [Iris]: Loading 0 prefetch mods
-[14:45:58] [Server thread/INFO]: [Iris]: Loading 0 prefetch jigsaw-pools
-[14:45:58] [Server thread/INFO]: [Iris]: Loading 1 prefetch expressions
-[14:45:58] [Server thread/INFO]: [Iris]: Loading 0 prefetch matter
-[14:45:58] [Server thread/INFO]: [Iris]: Loading 0 prefetch entities
-[14:45:58] [Server thread/INFO]: [Iris]: Engine init: world_iris_smp/overworld seed=231758257 billow2D=java-unsupported-platform
-[14:46:33] [Server thread/INFO]: [Iris]: Loading 0 prefetch jigsaw-pieces
-[14:46:33] [Server thread/INFO]: [Iris]: Loading 0 prefetch spawners
-[14:46:33] [Server thread/INFO]: [Iris]: Loading 0 prefetch objects
-[14:46:33] [Server thread/INFO]: [Iris]: Loading 0 prefetch loot
-[14:46:33] [Server thread/INFO]: [Iris]: Loading 12 prefetch regions
-[14:46:33] [Server thread/INFO]: [Iris]: Loading 390 prefetch biomes
-[14:46:33] [Server thread/INFO]: [Iris]: Loading 315 prefetch blocks
-[14:46:33] [Server thread/INFO]: [Iris]: Loading 0 prefetch image-maps
-[14:46:33] [Server thread/INFO]: [Iris]: Loading 0 prefetch structures
-[14:46:33] [Server thread/INFO]: [Iris]: Loading 1 prefetch dimensions
-[14:46:33] [Server thread/INFO]: [Iris]: Loading 22 prefetch generators
-[14:46:33] [Server thread/INFO]: [Iris]: Loading 0 prefetch images
-[14:46:33] [Server thread/INFO]: [Iris]: Loading 0 prefetch markers
-[14:46:33] [Server thread/INFO]: [Iris]: Loading 0 prefetch mods
-[14:46:33] [Server thread/INFO]: [Iris]: Loading 0 prefetch jigsaw-pools
-[14:46:33] [Server thread/INFO]: [Iris]: Loading 1 prefetch expressions
-[14:46:33] [Server thread/INFO]: [Iris]: Loading 0 prefetch matter
-[14:46:33] [Server thread/INFO]: [Iris]: Loading 0 prefetch entities
-[14:46:33] [Server thread/INFO]: [Iris]: Engine init: world_iris_visionsmp/overworld seed=1337 billow2D=java-unsupported-platform
-[14:46:36] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:overworld'...
-[14:46:36] [Server thread/INFO]: Preparing spawn area: 100%
-[14:46:36] [Server thread/INFO]: Prepared spawn area in 14 ms
-[14:46:36] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:the_nether'...
-[14:46:36] [Server thread/INFO]: Prepared spawn area in 79 ms
-[14:46:36] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:the_end'...
-[14:46:36] [Server thread/INFO]: Prepared spawn area in 2 ms
-[14:46:36] [Server thread/INFO]: Loading 0 persistent chunks for level 'iris:smp'...
-[14:46:36] [Server thread/INFO]: Prepared spawn area in 2 ms
-[14:46:36] [Server thread/INFO]: Loading 0 persistent chunks for level 'iris:visionsmp'...
-[14:46:36] [Server thread/INFO]: Prepared spawn area in 1 ms
-[14:46:36] [Server thread/INFO]: Done preparing level "world" (69.835s)
-[14:46:36] [Server thread/INFO]: [ItemsAdder] Enabling ItemsAdder v4.1.0-beta-nativepackets-3
-[14:46:36] [Server thread/WARN]: [ItemsAdder] NativePackets is missing, disabled or incompatible; ItemsAdder initialization is paused.
-[14:46:36] [Server thread/INFO]: [vision-core] Enabling vision-core v1.0.0
-[14:46:36] [Server thread/INFO]: [vision-core] vision-core enabled.
-[14:46:36] [Server thread/INFO]: [Multiverse-Core] Enabling Multiverse-Core v5.8.1
-[14:46:37] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:survival'...
-[14:46:37] [Server thread/INFO]: Prepared spawn area in 0 ms
-[14:46:38] [Server thread/INFO]: [Multiverse-Core] API service loaded!
-[14:46:38] [Server thread/INFO]: [Multiverse-Core] Version 5.8.1 (API v5.8) Enabled - By dumptruckman, Rigby, fernferret, lithium3141, main--, benwoo1110 and Zax71
-[14:46:38] [Server thread/INFO]: [Multiverse-Core] Loving Multiverse-Core? Please consider supporting the project with a small donation: https://github.com/sponsors/Multiverse
-[14:46:38] [Server thread/INFO]: [Iris]: Corrected 2 Multiverse world entries.
-[14:46:38] [Server thread/INFO]: [Iris]: Adopted 2 live Iris worlds into Multiverse.
-[14:46:38] [Server thread/INFO]: [spark] Starting background profiler...
-[14:46:38] [Server thread/INFO]: [spark] The async-profiler engine is not supported for your os/arch (windows11/amd64), so the built-in Java engine will be used instead.
-[14:46:38] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[14:46:38] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
-[14:46:38] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
-[14:46:38] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/iris:smp
-[14:46:39] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/iris:visionsmp
-[14:46:39] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:survival
-[14:46:39] [Server thread/INFO]: Running delayed init tasks
-[14:46:40] [Craft Scheduler Thread - 4 - ItemsAdder/WARN]: [ItemsAdder] NativePackets 0.1.5 prepared at C:\Users\thomm\OneDrive\Bureaublad\vision-smp\plugins\NativePackets.jar; restart required
-[14:46:41] [Server thread/INFO]: [Iris]: Iris world "iris:smp" is already loaded.
-[14:46:41] [Server thread/INFO]: [Iris]: Iris world "iris:visionsmp" is already loaded.
-[14:46:41] [Server thread/INFO]: [ItemsAdder] Disabling ItemsAdder v4.1.0-beta-nativepackets-3
-[14:46:41] [Server thread/INFO]: Done (153.168s)! For help, type "help"
-[14:46:42] [Paper Async Task Handler Thread - 1/INFO]: *** Currently you are 1 build behind ***
-[14:46:42] [Paper Async Task Handler Thread - 1/INFO]: *** It is highly recommended to download the latest build from https://papermc.io/downloads/paper ***
-[14:47:00] [Iris 2/INFO]: [Iris]: Pack 'overworld' validated.
-[14:47:00] [Iris 2/INFO]: [Iris]: Pack 'underworld' validated.
-[14:54:23] [User Authenticator #0/INFO]: UUID of player snowduck1 is 8b1d5a8b-d3fe-4be1-ad61-b1b4ff7989b9
-[14:54:23] [Server thread/INFO]: [HorriblePlayerLoginEventHack] You have plugins listening to the PlayerLoginEvent, this will cause re-configuration APIs to be unavailable: [LuckPerms]
-[14:54:24] [Server thread/INFO]: System chat: snowduck1 joined the game
-[14:54:24] [Server thread/INFO]: snowduck1[/127.0.0.1:50116] logged in with entity id 1 at ([minecraft:overworld]101.36017736485218, 60.0, 100.41254582932253)
-[14:54:24] [Server thread/WARN]: snowduck1 moved too quickly! 101.36017736485218,60.0,100.41254582932253
-[14:54:48] [Server thread/INFO]: snowduck1 issued server command: /vc reload
-[14:56:37] [Server thread/INFO]: snowduck1 issued server command: /pl
+[16:26:27] [ServerMain/INFO]: [bootstrap] Running Java 26 (Java HotSpot(TM) 64-Bit Server VM 26+35-2893; Oracle Corporation null) on Windows 11 10.0 (amd64)
+[16:26:27] [ServerMain/INFO]: [bootstrap] Loading Paper 26.3-181-main@cc7ee9a (2026-10-13T16:20:13Z) for Minecraft 26.3
+[16:26:27] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[16:26:27] [ServerMain/INFO]: [PluginInitializerManager] Initialized 5 plugins
+[16:26:27] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (5):
+ - ItemsAdder (4.1.0-beta-nativepackets-3), LuckPerms (5.5.87), Multiverse-Core (5.8.1), NativePackets (0.1.5), vision-core (1.0.0)
+[16:26:30] [DataConverter MCTypeRegistry init thread/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
+[16:26:30] [ServerMain/INFO]: [com.destroystokyo.paper.profile.PaperServicesDiscoveryService] Environment: Environment[discoveryUrl=https://discovery.minecraftservices.com/minecraft/client, name=PROD]
+[16:26:30] [DataConverter MCTypeRegistry init thread/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 262,0ms
+[16:26:31] [Worker-Main-5/INFO]: Loaded 1866 advancements
+[16:26:32] [Server thread/INFO]: Starting minecraft server version 26.3
+[16:26:32] [Server thread/INFO]: Loading properties
+[16:26:32] [Server thread/INFO]: This server is running Paper version 26.3-181-main@cc7ee9a (2026-10-13T16:20:13Z) (Implementing API version 26.3.build.181-stable)
+[16:26:32] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[16:26:32] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[16:26:32] [Server thread/INFO]: Using 4 threads for Netty based IO
+[16:26:32] [Server thread/INFO]: [MoonriseCommon] Paper is using 4 worker threads, 1 I/O threads
+[16:26:32] [Server thread/INFO]: Default game type: SURVIVAL
+[16:26:32] [Server thread/INFO]: Generating keypair
+[16:26:32] [Server thread/INFO]: Starting Minecraft server on *:25565
+[16:26:32] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[16:26:32] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[16:26:32] [Server thread/INFO]: [SpigotLibraryLoader] [ItemsAdder] Loading 1 libraries... please wait
+[16:26:33] [Server thread/INFO]: [SpigotLibraryLoader] [ItemsAdder] Loaded library C:\Users\thomm\OneDrive\Bureaublad\vision-smp\libraries\io\netty\netty-codec-http\4.1.118.Final\netty-codec-http-4.1.118.Final.jar
+[16:26:33] [Server thread/INFO]: [SpigotLibraryLoader] [ItemsAdder] Loaded library C:\Users\thomm\OneDrive\Bureaublad\vision-smp\libraries\io\netty\netty-common\4.1.118.Final\netty-common-4.1.118.Final.jar
+[16:26:33] [Server thread/INFO]: [SpigotLibraryLoader] [ItemsAdder] Loaded library C:\Users\thomm\OneDrive\Bureaublad\vision-smp\libraries\io\netty\netty-buffer\4.1.118.Final\netty-buffer-4.1.118.Final.jar
+[16:26:33] [Server thread/INFO]: [SpigotLibraryLoader] [ItemsAdder] Loaded library C:\Users\thomm\OneDrive\Bureaublad\vision-smp\libraries\io\netty\netty-transport\4.1.118.Final\netty-transport-4.1.118.Final.jar
+[16:26:33] [Server thread/INFO]: [SpigotLibraryLoader] [ItemsAdder] Loaded library C:\Users\thomm\OneDrive\Bureaublad\vision-smp\libraries\io\netty\netty-resolver\4.1.118.Final\netty-resolver-4.1.118.Final.jar
+[16:26:33] [Server thread/INFO]: [SpigotLibraryLoader] [ItemsAdder] Loaded library C:\Users\thomm\OneDrive\Bureaublad\vision-smp\libraries\io\netty\netty-codec\4.1.118.Final\netty-codec-4.1.118.Final.jar
+[16:26:33] [Server thread/INFO]: [SpigotLibraryLoader] [ItemsAdder] Loaded library C:\Users\thomm\OneDrive\Bureaublad\vision-smp\libraries\io\netty\netty-handler\4.1.118.Final\netty-handler-4.1.118.Final.jar
+[16:26:33] [Server thread/INFO]: [SpigotLibraryLoader] [ItemsAdder] Loaded library C:\Users\thomm\OneDrive\Bureaublad\vision-smp\libraries\io\netty\netty-transport-native-unix-common\4.1.118.Final\netty-transport-native-unix-common-4.1.118.Final.jar
+[16:26:33] [Server thread/INFO]: [NativePackets] Loading server plugin NativePackets v0.1.5
+[16:26:33] [Server thread/INFO]: [LuckPerms] Loading server plugin LuckPerms v5.5.87
+[16:26:33] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[16:26:33] [Server thread/INFO]: [vision-core] Loading server plugin vision-core v1.0.0
+[16:26:33] [Server thread/INFO]: [CoreLogging] Loading server plugin Multiverse-Core v5.8.1
+[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading server plugin ItemsAdder v4.1.0-beta-nativepackets-3
+[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library FastNbt-jar (remapped)...
+[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library httpmime...
+[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library org.apache.httpcomponents:httpclient:4.5.14
+[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library org.apache.httpcomponents:httpcore:4.4.16
+[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library commons-logging:commons-logging:1.2
+[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library commons-codec:commons-codec:1.11
+[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library commons-math3...
+[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library speedy-math...
+[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library jansi...
+[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library fastjson...
+[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library com.alibaba.fastjson2:fastjson2-extension:2.0.43
+[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library com.alibaba.fastjson2:fastjson2:2.0.43
+[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library json-path...
+[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library net.minidev:json-smart:2.4.10
+[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library net.minidev:accessors-smart:2.4.9
+[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library org.ow2.asm:asm:9.3
+[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library org.slf4j:slf4j-api:1.7.36
+[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library armor-equip-event...
+[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library jctools-core...
+[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library glowingentities...
+[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library fr.skytasul:reflection-remapper:2.0.0
+[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library adventure-platform-bukkit...
+[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:adventure-platform-api:4.4.1
+[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:adventure-api:4.21.0
+[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:adventure-key:4.21.0
+[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:adventure-text-serializer-bungeecord:4.4.1
+[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:adventure-text-serializer-legacy:4.21.0
+[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:adventure-nbt:4.21.0
+[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:examination-api:1.3.0
+[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:examination-string:1.3.0
+[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library org.jetbrains:annotations:26.0.2
+[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:adventure-text-serializer-gson:4.21.0
+[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:adventure-text-serializer-json:4.21.0
+[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:option:1.1.0
+[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library org.jspecify:jspecify:1.0.0
+[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library com.google.auto.service:auto-service-annotations:1.1.1
+[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:adventure-text-serializer-commons:4.21.0
+[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:adventure-text-serializer-gson-legacy-impl:4.21.0
+[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:adventure-text-serializer-json-legacy-impl:4.21.0
+[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:adventure-platform-facet:4.4.1
+[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:adventure-platform-viaversion:4.4.1
+[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library adventure-text-serializer-gson...
+[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:adventure-text-serializer-json:5.1.1
+[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:adventure-api:5.1.1
+[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:adventure-key:5.1.1
+[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:option:1.1.0
+[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library com.google.code.gson:gson:2.13.2
+[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library com.google.errorprone:error_prone_annotations:2.41.0
+[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library com.google.auto.service:auto-service-annotations:1.1.1
+[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:adventure-text-serializer-commons:5.1.1
+[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library org.jspecify:jspecify:1.0.0
+[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library org.jetbrains:annotations:26.1.0
+[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library adventure-text-serializer-gson-legacy-impl...
+[16:26:34] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:adventure-text-serializer-gson:4.26.1
+[16:26:34] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:adventure-text-serializer-json:4.26.1
+[16:26:34] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:option:1.1.0
+[16:26:34] [Server thread/INFO]: [ItemsAdder] Loading library org.jspecify:jspecify:1.0.0
+[16:26:34] [Server thread/INFO]: [ItemsAdder] Loading library com.google.code.gson:gson:2.8.0
+[16:26:34] [Server thread/INFO]: [ItemsAdder] Loading library com.google.auto.service:auto-service-annotations:1.1.1
+[16:26:34] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:adventure-text-serializer-commons:4.26.1
+[16:26:34] [Server thread/INFO]: [ItemsAdder] Loading library org.jetbrains:annotations:26.0.2-1
+[16:26:34] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:adventure-text-serializer-json-legacy-impl:4.26.1
+[16:26:34] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:adventure-api:4.26.1
+[16:26:34] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:adventure-key:4.26.1
+[16:26:34] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:examination-api:1.3.0
+[16:26:34] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:examination-string:1.3.0
+[16:26:34] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:adventure-nbt:4.26.1
+[16:26:34] [Server thread/INFO]: [NativePackets] Enabling NativePackets v0.1.5
+[16:26:34] [Server thread/INFO]: [NativePackets] NativePackets bootstrap enabled for PAPER 26.3 on Java 26
+[16:26:34] [Server thread/INFO]: [NativePackets] NativePackets runtime: version=0.1.5 minecraft=26.3 protocol=777 platform=PAPER brand=Paper mappings=MOJANG adapter=paper-26.3 abi=7 verified=true injectedPipelines=1 adventure=true viaVersion=false folia=false
+[16:26:34] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.5.87
+[16:26:34] [Server thread/INFO]:         __    
+[16:26:34] [Server thread/INFO]:   |    |__)   LuckPerms v5.5.87
+[16:26:34] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
+[16:26:34] [Server thread/INFO]: 
+[16:26:34] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
+[16:26:34] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[16:26:34] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[16:26:34] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 498ms)
+[16:26:34] [Server thread/INFO]: Preparing level "world"
+[16:26:35] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:overworld'...
+[16:26:35] [Server thread/INFO]: Preparing spawn area: 100%
+[16:26:35] [Server thread/INFO]: Prepared spawn area in 2 ms
+[16:26:35] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:the_nether'...
+[16:26:35] [Server thread/INFO]: Prepared spawn area in 1 ms
+[16:26:35] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:the_end'...
+[16:26:35] [Server thread/INFO]: Prepared spawn area in 1 ms
+[16:26:35] [Server thread/INFO]: Loading 0 persistent chunks for level 'iris:visionsmp'...
+[16:26:35] [Server thread/INFO]: Prepared spawn area in 1 ms
+[16:26:35] [Server thread/INFO]: Loading 0 persistent chunks for level 'iris:smp'...
+[16:26:35] [Server thread/INFO]: Prepared spawn area in 1 ms
+[16:26:35] [Server thread/INFO]: Done preparing level "world" (0.505s)
+[16:26:35] [Server thread/INFO]: [vision-core] Enabling vision-core v1.0.0
+[16:26:35] [Server thread/INFO]: [vision-core] vision-core enabled.
+[16:26:35] [Server thread/INFO]: [Multiverse-Core] Enabling Multiverse-Core v5.8.1
+[16:26:35] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:survival'...
+[16:26:35] [Server thread/INFO]: Prepared spawn area in 7 ms
+[16:26:36] [Server thread/INFO]: [Multiverse-Core] API service loaded!
+[16:26:36] [Server thread/INFO]: [Multiverse-Core] Version 5.8.1 (API v5.8) Enabled - By dumptruckman, Rigby, fernferret, lithium3141, main--, benwoo1110 and Zax71
+[16:26:36] [Server thread/INFO]: [Multiverse-Core] Loving Multiverse-Core? Please consider supporting the project with a small donation: https://github.com/sponsors/Multiverse
+[16:26:36] [Server thread/INFO]: [ItemsAdder] Enabling ItemsAdder v4.1.0-beta-nativepackets-3
+[16:26:36] [Server thread/INFO]: ItemsAdder » 
+                                                   ItemsAdder 4.1.0-beta-nativepackets-3
+  ___  ___        __        __   __   ___  __      NativePackets 0.1.5
+|  |  |__   |\/| /__`  /\  |  \ |  \ |__  |__)     Paper 26.3-181-cc7ee9a (MC: 26.3)
+|  |  |___  |  | .__/ /--\ |__/ |__/ |___ |  \     Build Date: dev
+                                                   Java Version: 26
+                                                   OS: Windows 11 10.0                                               
+[16:26:36] [Server thread/INFO]: ItemsAdder » [License] Discord public beta build.
+[16:26:43] [Server thread/INFO]: [spark] Starting background profiler...
+[16:26:43] [Server thread/INFO]: [spark] The async-profiler engine is not supported for your os/arch (windows11/amd64), so the built-in Java engine will be used instead.
+[16:26:43] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[16:26:43] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[16:26:43] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[16:26:43] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/iris:visionsmp
+[16:26:43] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/iris:smp
+[16:26:43] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:survival
+[16:26:43] [Server thread/INFO]: Running delayed init tasks
+[16:26:44] [Craft Scheduler Thread - 0 - NativePackets/INFO]: [NativePackets] No newer compatible NativePackets release
+[16:26:45] [Server thread/INFO]: ItemsAdder » [Content] Loaded 7 items
+[16:26:45] [Server thread/INFO]: ItemsAdder » Used Blocks IDs:
+[16:26:45] [Server thread/INFO]: ItemsAdder »  - REAL 0/188
+[16:26:45] [Server thread/INFO]: ItemsAdder »  - REAL_NOTE 0/750
+[16:26:45] [Server thread/INFO]: ItemsAdder »  - REAL_TRANSPARENT 0/63
+[16:26:45] [Server thread/INFO]: ItemsAdder » Used Font Images: 27/6608
+[16:26:45] [User Authenticator #0/INFO]: UUID of player snowduck1 is 8b1d5a8b-d3fe-4be1-ad61-b1b4ff7989b9
+[16:26:45] [Server thread/INFO]: ItemsAdder » [Content] Loaded 1 categories
+[16:26:45] [Server thread/INFO]: ItemsAdder » Registering 0 recipes...
+[16:26:45] [Server thread/INFO]: ItemsAdder » Registered 0 recipes.
+[16:26:45] [Server thread/INFO]: ItemsAdder » [Content] Contents loaded successfully!
+[16:26:45] [Server thread/INFO]: ItemsAdder » [Pack] per_client_version: preparing 9 packs in background...
+[16:26:45] [Server thread/INFO]: ItemsAdder » ResourcePack
+[16:26:45] [Server thread/INFO]: ItemsAdder »  - Path: /vision-smp/plugins/ItemsAdder/output/generated.zip
+[16:26:45] [Server thread/INFO]: ItemsAdder »  - Download: http://127.0.1.1:25565/resourcepack
+[16:26:45] [Server thread/INFO]: ItemsAdder »  - Size: 1 MB/250 MB (0%)
+[16:26:45] [Server thread/INFO]: Done (19.420s)! For help, type "help"
+[16:26:45] [Server thread/INFO]: snowduck1 (/127.0.0.1:60386) lost connection: Disconnected
+[16:26:45] [Server thread/INFO]: [HorriblePlayerLoginEventHack] You have plugins listening to the PlayerLoginEvent, this will cause re-configuration APIs to be unavailable: [LuckPerms]
+[16:26:46] [Paper Async Task Handler Thread - 1/INFO]: *** Currently you are 2 builds behind ***
+[16:26:46] [Paper Async Task Handler Thread - 1/INFO]: *** It is highly recommended to download the latest build from https://papermc.io/downloads/paper ***
+[16:26:46] [ItemsAdder_client_pack/INFO]: ItemsAdder » [Pack] per_client_version: 9/9 packs ready in 167 ms.
+[16:26:48] [Server thread/INFO]: System chat: snowduck1 joined the game
+[16:26:48] [Server thread/INFO]: snowduck1[/127.0.0.1:63723] logged in with entity id 1 at ([minecraft:overworld]100.57892846943457, 58.5, 94.85389431648807)
+[16:26:48] [Server thread/WARN]: snowduck1 moved too quickly! 100.57892846943457,58.5,94.85389431648807
+[16:27:02] [Server thread/INFO]: snowduck1 issued server command: /vc heart give snowduck1
+[16:28:50] [Server thread/INFO]: snowduck1 issued server command: /gamemode creative
+[16:28:50] [Server thread/INFO]: System chat: [snowduck1: Set own game mode to Creative Mode]
+[16:29:38] [Server thread/INFO]: snowduck1 issued server command: /enchant snowduck1 minecraft:breach 4
+[16:29:38] [Server thread/INFO]: System chat: [snowduck1: Applied enchantment Breach IV to snowduck1's item]
+[16:29:44] [Server thread/INFO]: snowduck1 issued server command: /enchant snowduck1 minecraft:density 4
+[16:29:51] [Server thread/INFO]: snowduck1 issued server command: /enchant snowduck1 minecraft:density 2
+[16:30:06] [Server thread/INFO]: snowduck1 issued server command: /gamemode survival
+[16:30:06] [Server thread/INFO]: System chat: [snowduck1: Set own game mode to Survival Mode]
+[16:30:15] [Server thread/INFO]: snowduck1 issued server command: /gamemode creative
+[16:30:15] [Server thread/INFO]: System chat: [snowduck1: Set own game mode to Creative Mode]
+[16:30:33] [Server thread/INFO]: snowduck1 issued server command: /mv list
+[16:30:39] [Server thread/INFO]: snowduck1 issued server command: /mv tp survival
+[16:31:13] [Server thread/INFO]: snowduck1 issued server command: /gamemode creative
+[16:31:13] [Server thread/INFO]: System chat: [snowduck1: Set own game mode to Creative Mode]
+[16:31:26] [Server thread/INFO]: snowduck1 issued server command: /mv tp world
+[16:36:01] [Server thread/INFO]: snowduck1 issued server command: /gamemode creative
+[16:36:01] [Server thread/INFO]: System chat: [snowduck1: Set own game mode to Creative Mode]
