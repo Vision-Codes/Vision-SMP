@@ -1,29 +1,56 @@
 {
   "stats": {
-    "minecraft:custom": {
-      "minecraft:time_since_rest": 12000,
-      "minecraft:walk_one_cm": 6951,
-      "minecraft:damage_taken": 90,
-      "minecraft:play_time": 12000,
-      "minecraft:jump": 68,
-      "minecraft:time_since_death": 12000,
-      "minecraft:drop": 1,
-      "minecraft:open_enderchest": 1,
-      "minecraft:sprint_one_cm": 8689,
-      "minecraft:fall_one_cm": 1875,
-      "minecraft:total_world_time": 12000,
-      "minecraft:fly_one_cm": 330601,
-      "minecraft:crouch_one_cm": 335,
-      "minecraft:walk_on_water_one_cm": 399,
-      "minecraft:sneak_time": 650
+    "minecraft:mined": {
+      "minecraft:oak_leaves": 3
     },
     "minecraft:used": {
       "minecraft:stone": 6,
+      "minecraft:orange_shulker_box": 1,
+      "minecraft:red_shulker_box": 1,
+      "minecraft:wind_charge": 174,
+      "minecraft:white_shulker_box": 1,
+      "minecraft:cyan_shulker_box": 1,
+      "minecraft:lime_shulker_box": 1,
       "minecraft:moss_carpet": 4,
+      "minecraft:mace": 15,
       "minecraft:sea_lantern": 4
     },
     "minecraft:dropped": {
-      "minecraft:stone": 1
+      "minecraft:spruce_door": 2,
+      "minecraft:stone": 1,
+      "minecraft:nether_star": 83,
+      "minecraft:acacia_wood": 1
+    },
+    "minecraft:picked_up": {
+      "minecraft:wind_charge": 118,
+      "minecraft:mace": 2,
+      "minecraft:nether_star": 167,
+      "minecraft:spruce_door": 2
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 147878,
+      "minecraft:walk_one_cm": 71009,
+      "minecraft:leave_game": 8,
+      "minecraft:walk_under_water_one_cm": 1140,
+      "minecraft:damage_taken": 1520,
+      "minecraft:damage_dealt": 2403,
+      "minecraft:play_time": 260704,
+      "minecraft:open_shulker_box": 6,
+      "minecraft:jump": 893,
+      "minecraft:time_since_death": 147858,
+      "minecraft:drop": 20,
+      "minecraft:open_enderchest": 1,
+      "minecraft:sprint_one_cm": 65018,
+      "minecraft:open_chest": 4,
+      "minecraft:fall_one_cm": 72274,
+      "minecraft:swim_one_cm": 18026,
+      "minecraft:total_world_time": 260704,
+      "minecraft:fly_one_cm": 1710565,
+      "minecraft:walk_on_water_one_cm": 2612,
+      "minecraft:crouch_one_cm": 1803,
+      "minecraft:sneak_time": 1896,
+      "minecraft:deaths": 2,
+      "minecraft:player_kills": 8
     }
   },
   "DataVersion": 5023

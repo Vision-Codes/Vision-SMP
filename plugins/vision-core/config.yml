@@ -12,35 +12,143 @@ motd:
   center: true
   center-width: 270
   line1:
-    text: VISION SERVER | WELCOME
+    text: VISION SMP
     gradient:
-    - '#00E5FF'
-    - '#7B2FFF'
+    - '#89b8d2'
+    - '#5F8093'
     bold: true
   line2:
-    text: Join the adventure
+    text: Join our hardcore roleplay server!
     gradient:
     - '#FF9A9E'
     - '#FECF6B'
     bold: false
 
 # HEARTS (1 heart = 2 health points)
+#   Every player's hearts are saved in plugins/vision-core/hearts.yml - don't edit that file while the server runs.
 #   default  - hearts every player starts with (vanilla = 10)
 #   min      - lowest a player can drop to (/takeheart cannot go below this)
 #   max      - highest a player can reach by redeeming Extra Hearts
 #   reward-on-kill - the killer of a player receives an Extra Heart item
 #   victim-loses-heart-on-kill - the player who got killed loses one heart (never below min)
+#   drop-confirm-seconds - dropping an Extra Heart needs a second drop within this many seconds (0 = off)
 # The Extra Heart is a nether star tagged internally, so renamed/normal nether stars do nothing.
 hearts:
   default: 10
   min: 1
   max: 20
   reward-on-kill: true
-  victim-loses-heart-on-kill: true
+  victim-loses-heart-on-kill: false
+  drop-confirm-seconds: 3
   item:
     name: '&4&lExtra Heart'
     lore:
     - '&7Right-click to gain an extra heart.'
+
+# ECONOMY / CURRENCIES
+#   default-currency - the currency used when a command doesn't name one
+#   currencies       - every currency on the server. To add one: copy a block, give it a new id
+#                      (lowercase letters, numbers, _ or -) and run /vc reload. No restart needed.
+#   Per currency:
+#     name / singular  - plural / singular display name ("1 Gold Coin", "5 Gold Coins")
+#     color            - colour code for the amount, e.g. "&6" (gold) or "&b" (aqua)
+#     starting-balance - what a player gets the first time they join
+#     payable          - whether players can send it to each other with /pay
+#     max-balance      - highest balance a player can hold (0 = no limit)
+#   Balances are saved in plugins/vision-core/balances.yml - don't edit it while the server runs.
+#   Note: the gold_coins block is restored on startup if you delete it.
+economy:
+  default-currency: gold_coins
+  currencies:
+    gold_coins:
+      name: Gold Coins
+      singular: Gold Coin
+      color: '&6'
+      starting-balance: 0
+      payable: true
+      max-balance: 0
+# Example of a second currency (remove the # signs, then /vc reload):
+# gems:
+#   name: "Gems"
+#   singular: "Gem"
+#   color: "&b"
+#   starting-balance: 0
+#   payable: false
+
+# TABLIST
+#   header / footer  - lines shown above / below the player list (MiniMessage: <gradient:#aaa:#bbb>, <red>, ...).
+#                      Put your logo in the header. With a resource pack you can use a custom font glyph:
+#                      "<font:yourpack:logo>A</font>"
+#   update-interval-seconds - how often the tablist refreshes (ping, online count, balance...)
+#   sort-by-rank     - sort players by rank (first rank under 'ranks' on top), otherwise alphabetical
+#   ranks            - highest rank FIRST. A player gets the first rank whose permission they have.
+#                      With LuckPerms, a group called 'admin' gives the node 'group.admin' automatically.
+#                      Careful: players with the '*' permission match every rank, so they get the first one.
+#     name           - plain rank name, available as <rank>
+#     permission     - permission node to have this rank
+#     format         - how the player is shown in the list, <player> = their name
+#   default-rank     - used when a player has none of the permissions above
+#   Placeholders (header, footer and formats):
+#     <player> <rank> <ping> <hearts> <world> <online> <max> <tps>
+#     <balance> / <currency>  - balance and name of the default currency
+#     <bal_ID>                - balance of a specific currency, e.g. <bal_gold_coins>
+tablist:
+  enabled: true
+  update-interval-seconds: 2
+  sort-by-rank: true
+  header:
+  - ''
+  - "\uE000"
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  footer:
+  - ''
+  - '<gray>Players online: <white><online><dark_gray>/<white><max>'
+  - '<gray>Ping: <white><ping>ms  <dark_gray>|  <gray>TPS: <white><tps>'
+  - '<gray>Hearts: <red><hearts>  <dark_gray>|  <gray><currency>: <gold><balance>'
+  - ''
+  default-rank:
+    name: Player
+    format: <gray><player>
+  ranks:
+    owner:
+      name: Owner
+      permission: group.owner
+      format: "<white>\uE108</white> <red><player>"
+    admin:
+      name: Admin
+      permission: group.admin
+      format: <red><bold>ADMIN</bold> <white><player>
+    mod:
+      name: Mod
+      permission: group.mod
+      format: <dark_aqua><bold>MOD</bold> <white><player>
+    helper:
+      name: Helper
+      permission: group.helper
+      format: <aqua><bold>HELPER</bold> <white><player>
+    vip:
+      name: VIP
+      permission: group.vip
+      format: <gold><bold>VIP</bold> <white><player>
+
+# PERSONAL LOOT
+#   Every player gets their own copy of the loot in generated chests (villages, shipwrecks, buried treasure,
+#   dungeons, mineshaft minecarts...). One player emptying a chest never affects anyone else, and what a
+#   player leaves behind stays in their own copy.
+#   minecarts       - chest minecarts (abandoned mineshafts) are personal too
+#   protect-chests  - nobody can break (or blow up) a loot chest, because that would destroy it for everyone.
+#                     Players with the permission visioncore.loot.break (ops by default) can still break them.
+#   disabled-worlds - worlds where chests keep the normal shared vanilla behaviour
+#   Saved per player in plugins/vision-core/loot/. '/vc loot reset <player|all>' makes the chests fresh again.
+loot:
+  enabled: true
+  minecarts: true
+  protect-chests: true
+  disabled-worlds: []
 
 # Spawn is written here by /setspawn (spawn: world, x, y, z, yaw, pitch)
 
@@ -81,3 +189,25 @@ messages:
   heart-usage: '&cUsage: /vc heart give <player> [amount]  |  /vc heart set <player>
     <hearts>'
   player-not-found: '&cPlayer ''{player}'' is not online.'
+  heart-drop-confirm: '&eDrop the &4&lExtra Heart &eagain within {seconds} seconds
+    to really drop it.'
+  balance-header: '&7Your balance:'
+  balance-header-other: '&7Balance of &f{player}&7:'
+  balance-line: '&8- {amount}'
+  currency-not-found: '&cUnknown currency ''{currency}''.'
+  currency-not-payable: '&c{currency} can''t be sent to other players.'
+  invalid-amount: '&cThat is not a valid amount (whole numbers only).'
+  not-enough-funds: '&cYou don''t have enough {currency}.'
+  pay-usage: '&cUsage: /pay <player> <amount> [currency]'
+  pay-self: '&cYou can''t pay yourself.'
+  pay-sent: '&aYou sent {amount}&a to {player}.'
+  pay-received: '&aYou received {amount}&a from {player}.'
+  pay-target-full: '&c{player} can''t hold that much more.'
+  eco-usage: '&cUsage: /vc eco <give|take|set> <player> <amount> [currency]'
+  eco-updated: '&a{player} now has {amount}&a.'
+  eco-insufficient: '&c{player} only has {amount}&c.'
+  loot-usage: '&cUsage: /vc loot reset <player|all>'
+  loot-reset-player: '&aPersonal loot of {player} reset: every chest is fresh for
+    them again.'
+  loot-reset-all: '&aPersonal loot reset for all players.'
+  loot-protected: '&cLoot chests can''t be broken, they are shared by everyone.'

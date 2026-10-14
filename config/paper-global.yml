@@ -142,5 +142,5 @@ unsupported-settings:
 update-checker:
   enabled: true
 watchdog:
-  early-warning-delay: 10000
+  early-warning-delay: 180000
   early-warning-every: 5000
