@@ -1,0 +1,32 @@
+# VisionStands config
+# Text supports MiniMessage (<gold>, <bold>, <#ff8800>, <gradient:...>) or legacy & codes (&6, &l).
+
+prefix: "<dark_gray>[<gold>Stands</gold>]</dark_gray> "
+
+tool:
+  material: BLAZE_ROD
+  name: "<gold><bold>Stand Editor"
+  lore:
+    - "<gray>Right-click an armor stand"
+    - "<gray>to open the editor."
+
+# Applied to stands spawned with /vstand create
+defaults:
+  arms: true
+  base-plate: false
+
+hologram:
+  # Extra height above the stand's head (blocks)
+  offset: 0.3
+  # Vanilla semi-transparent background behind the text
+  background: false
+  shadow: true
+  see-through: false
+
+interaction:
+  # Also run an NPC's actions when a player left-clicks (hits) it
+  left-click-triggers: false
+  # Seconds between triggers per player, used when an NPC has no own cooldown set
+  default-cooldown: 1.0
+  # Leave empty ("") to send nothing
+  cooldown-message: "<red>Please wait a moment before doing that again."
