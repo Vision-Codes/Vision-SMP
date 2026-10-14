@@ -1,0 +1,27 @@
+# World and map files
+/world/
+/world_nether/
+/world_the_end/
+*.mca
+
+# Logs, caches, and temp files
+/logs/
+*.log
+/cache/
+/libraries/
+/versions/
+/crash-reports/
+
+# Player data and stats
+/world/playerdata/
+/world/stats/
+/world/advancements/
+
+# Plugin databases and local states
+*.db
+*.sqlite
+*.sqlite3
+
+# Environment and secrets
+.env
+*.pem
