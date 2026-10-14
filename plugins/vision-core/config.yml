@@ -117,23 +117,35 @@ tablist:
     owner:
       name: Owner
       permission: group.owner
-      format: "<white>\uE108</white> <red><player>"
+      format: "<white>\uE108</white> <white><player>"
     admin:
       name: Admin
       permission: group.admin
-      format: <red><bold>ADMIN</bold> <white><player>
+      format: "<white>\uE107</white> <white><player>"
+    developer:
+      name: Developer
+      permission: group.developer
+      format: "<white>\uE106</white> <white><player>"
     mod:
       name: Mod
       permission: group.mod
-      format: <dark_aqua><bold>MOD</bold> <white><player>
+      format: "<white>\uE105</white> <white><player>"
     helper:
       name: Helper
       permission: group.helper
-      format: <aqua><bold>HELPER</bold> <white><player>
+      format: "<white>\uE104</white> <white><player>"
+    builder:
+      name: Builder
+      permission: group.builder
+      format: "<white>\uE103</white> <white><player>"
     vip:
       name: VIP
       permission: group.vip
-      format: <gold><bold>VIP</bold> <white><player>
+      format: "<white>\uE101</white> <white><player>"
+    vip+:
+      name: VIP+
+      permission: group.vip_plus
+      format: "<white>\uE102</white> <white><player>"
 
 # PERSONAL LOOT
 #   Every player gets their own copy of the loot in generated chests (villages, shipwrecks, buried treasure,
