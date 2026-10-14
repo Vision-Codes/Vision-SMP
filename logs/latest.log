@@ -1,0 +1,44 @@
+[10:24:59] [ServerMain/INFO]: [bootstrap] Running Java 26 (Java HotSpot(TM) 64-Bit Server VM 26+35-2893; Oracle Corporation null) on Windows 11 10.0 (amd64)
+[10:24:59] [ServerMain/INFO]: [bootstrap] Loading Paper 26.3-181-main@cc7ee9a (2026-10-13T16:20:13Z) for Minecraft 26.3
+[10:24:59] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[10:25:00] [ServerMain/INFO]: [PluginInitializerManager] Initialized 2 plugins
+[10:25:00] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (2):
+ - ClassSelector (1.1.0), vision-core (1.0.0)
+[10:25:02] [DataConverter MCTypeRegistry init thread/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
+[10:25:02] [ServerMain/INFO]: [com.destroystokyo.paper.profile.PaperServicesDiscoveryService] Environment: Environment[discoveryUrl=https://discovery.minecraftservices.com/minecraft/client, name=PROD]
+[10:25:02] [DataConverter MCTypeRegistry init thread/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 280,0ms
+[10:25:03] [Worker-Main-4/INFO]: Loaded 1866 advancements
+[10:25:04] [Server thread/INFO]: Starting minecraft server version 26.3
+[10:25:04] [Server thread/INFO]: Loading properties
+[10:25:04] [Server thread/INFO]: This server is running Paper version 26.3-181-main@cc7ee9a (2026-10-13T16:20:13Z) (Implementing API version 26.3.build.181-stable)
+[10:25:04] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[10:25:04] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[10:25:04] [Server thread/INFO]: Using 4 threads for Netty based IO
+[10:25:04] [Server thread/INFO]: [MoonriseCommon] Paper is using 4 worker threads, 1 I/O threads
+[10:25:04] [Server thread/INFO]: Default game type: SURVIVAL
+[10:25:04] [Server thread/INFO]: Generating keypair
+[10:25:04] [Server thread/INFO]: Starting Minecraft server on *:25565
+[10:25:04] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[10:25:04] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[10:25:04] [Server thread/INFO]: [vision-core] Loading server plugin vision-core v1.0.0
+[10:25:04] [Server thread/INFO]: [ClassSelector] Loading server plugin ClassSelector v1.1.0
+[10:25:04] [Server thread/INFO]: Preparing level "world"
+[10:25:05] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:overworld'...
+[10:25:05] [Server thread/INFO]: Preparing spawn area: 100%
+[10:25:05] [Server thread/INFO]: Prepared spawn area in 1 ms
+[10:25:05] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:the_nether'...
+[10:25:05] [Server thread/INFO]: Prepared spawn area in 1 ms
+[10:25:05] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:the_end'...
+[10:25:05] [Server thread/INFO]: Prepared spawn area in 1 ms
+[10:25:05] [Server thread/INFO]: Done preparing level "world" (0.377s)
+[10:25:05] [Server thread/INFO]: [vision-core] Enabling vision-core v1.0.0
+[10:25:05] [Server thread/INFO]: [vision-core] vision-core enabled.
+[10:25:05] [Server thread/INFO]: [ClassSelector] Enabling ClassSelector v1.1.0
+[10:25:05] [Server thread/INFO]: [ClassSelector] Loaded 5 classes.
+[10:25:05] [Server thread/INFO]: [spark] Starting background profiler...
+[10:25:05] [Server thread/INFO]: [spark] The async-profiler engine is not supported for your os/arch (windows11/amd64), so the built-in Java engine will be used instead.
+[10:25:05] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[10:25:05] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[10:25:05] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[10:25:05] [Server thread/INFO]: Running delayed init tasks
+[10:25:05] [Server thread/INFO]: Done (6.310s)! For help, type "help"

@@ -1,0 +1,83 @@
+# vision-core configuration
+#
+# MOTD
+#   text      - the line itself. MiniMessage tags work here: <red>, <bold>, <#ff8800>, <gradient:#aaa:#bbb>...
+#   gradient  - 2 or more hex colours the line fades through. Empty list [] = no fade.
+#   bold      - bold the whole line.
+#   center    - pad each line with spaces so it sits in the middle of the server list.
+#   center-width - width (in pixels) of the MOTD area in the server list. If your lines look
+#                  slightly left/right of centre, nudge this number (vanilla is ~270).
+# Hex colours need 1.16+ clients.
+motd:
+  center: true
+  center-width: 270
+  line1:
+    text: VISION SERVER | WELCOME
+    gradient:
+    - '#00E5FF'
+    - '#7B2FFF'
+    bold: true
+  line2:
+    text: Join the adventure
+    gradient:
+    - '#FF9A9E'
+    - '#FECF6B'
+    bold: false
+
+# HEARTS (1 heart = 2 health points)
+#   default  - hearts every player starts with (vanilla = 10)
+#   min      - lowest a player can drop to (/takeheart cannot go below this)
+#   max      - highest a player can reach by redeeming Extra Hearts
+#   reward-on-kill - the killer of a player receives an Extra Heart item
+#   victim-loses-heart-on-kill - the player who got killed loses one heart (never below min)
+# The Extra Heart is a nether star tagged internally, so renamed/normal nether stars do nothing.
+hearts:
+  default: 10
+  min: 1
+  max: 20
+  reward-on-kill: true
+  victim-loses-heart-on-kill: true
+  item:
+    name: '&4&lExtra Heart'
+    lore:
+    - '&7Right-click to gain an extra heart.'
+
+# Spawn is written here by /setspawn (spawn: world, x, y, z, yaw, pitch)
+
+settings:
+  # Teleport players who join for the very first time to the spawn
+  teleport-on-first-join: true
+  # Respawn at the spawn when the player has no bed / respawn anchor
+  respawn-at-spawn: true
+
+messages:
+  prefix: '&8[&bVision&8] &7'
+  no-permission: '&cYou don''t have permission to do that.'
+  players-only: '&cOnly players can use this.'
+  spawn-teleported: '&aTeleported to spawn.'
+  spawn-not-set: '&cThe spawn has not been set yet.'
+  spawn-set: '&aSpawn set to your current location.'
+  motd-updated: '&aMOTD line {line} updated.'
+  motd-prompt: '&eType the new text for MOTD line {line} in chat. Type &fcancel &eto
+    abort.'
+  motd-usage: '&cUsage: /vc motd <1|2> <text>'
+  gradient-updated: '&aGradient for MOTD line {line} updated.'
+  gradient-off: '&aGradient for MOTD line {line} turned off.'
+  gradient-usage: '&cUsage: /vc motd gradient <1|2> <off | #hex #hex ...> &7(at least
+    2 colours)'
+  reloaded: '&aConfiguration reloaded.'
+  heart-redeemed: '&aYou gained an extra heart! You now have &c{hearts} &ahearts.'
+  heart-max-reached: '&cYou already have the maximum of {max} hearts.'
+  heart-min-reached: '&cYou can''t withdraw any more hearts.'
+  heart-taken: '&aYou withdrew a heart. You now have &c{hearts} &ahearts.'
+  inventory-full: '&cFree up an inventory slot first.'
+  heart-kill-reward: '&aYou received an &4&lExtra Heart &afor killing {victim}.'
+  heart-lost: '&cYou lost a heart for being killed by {killer}.'
+  heart-given: '&aGave {amount} Extra Heart item(s) to {player}.'
+  heart-received: '&aYou received an &4&lExtra Heart&a.'
+  heart-set: '&aSet {player} to {hearts} hearts.'
+  heart-give-prompt: '&eType the name of the player who should receive an &4&lExtra
+    Heart &ein chat. Type &fcancel &eto abort.'
+  heart-usage: '&cUsage: /vc heart give <player> [amount]  |  /vc heart set <player>
+    <hearts>'
+  player-not-found: '&cPlayer ''{player}'' is not online.'
