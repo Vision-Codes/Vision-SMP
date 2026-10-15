@@ -1,0 +1,182 @@
+# ============================================================
+#  VisionCrafting — custom crafting table GUI
+#  Colors: &a, &l ... and hex &#RRGGBB
+# ============================================================
+
+settings:
+  # Right-clicking a crafting table opens this menu instead of the vanilla one.
+  replace-crafting-table: true
+  # Also allow all vanilla recipes in the 3x3 grid (custom recipes are checked first).
+  vanilla-recipes: true
+  # An ingredient WITHOUT a name/custom-model-data only accepts plain items.
+  # Keeps custom items (e.g. renamed nether stars) from being eaten by normal recipes.
+  strict-ingredients: true
+  # Max crafts done by a single shift-click (result slot and quick craft).
+  max-shift-crafts: 64
+  # Minecraft sound keys (also works with custom sounds from your resource pack). Empty = off.
+  sounds:
+    craft: "block.anvil.use"
+    open: "block.wooden_trapdoor.open"
+    deny: "entity.villager.no"
+
+messages:
+  prefix: "&8[&6Crafting&8] "
+  no-permission: "&cYou don't have permission."
+  reloaded: "&aConfig reloaded. &7(%recipes% custom recipes)"
+  player-not-found: "&cPlayer not found."
+  inventory-full: "&cYour inventory is full."
+  missing-items: "&cYou don't have the required items anymore."
+
+gui:
+  title: "&8Crafting"
+  # 6 rows x 9 columns. Reserved characters:
+  #   G = crafting grid (exactly 9)   R = result (exactly 1)   Q = quick craft slots (1 or more)
+  # Every other character is a static item from 'items' below.
+  layout:
+    - "#########"
+    - "#GGG###Q#"
+    - "#GGG#R#Q#"
+    - "#GGG###Q#"
+    - "#########"
+    - "---BX----"
+
+  items:
+    '#':
+      material: GRAY_STAINED_GLASS_PANE
+      name: " "
+    '-':
+      material: RED_STAINED_GLASS_PANE
+      name: " "
+    'B':
+      material: ARROW
+      name: "&eBack"
+      lore:
+        - "&7Return to the previous menu."
+      # Actions: close | command:<cmd> (run as player) | console:<cmd> (%player% placeholder)
+      # Leave empty / remove to do nothing.
+      action: "close"
+    'X':
+      material: BARRIER
+      name: "&cClose"
+      action: "close"
+
+  # Shown at R when the grid has no valid recipe.
+  no-result:
+    material: BARRIER
+    name: "&cNo recipe"
+    lore:
+      - "&7Place items in the grid to craft."
+
+  # Shown in a Q slot when nothing can be quick-crafted.
+  quick-empty:
+    material: LIGHT_GRAY_STAINED_GLASS_PANE
+    name: "&7Quick craft"
+    lore:
+      - "&8Nothing craftable with your inventory."
+
+  # Lines added under a quick craft suggestion. %ingredients% expands to one line per ingredient.
+  quick-lore:
+    - ""
+    - "&6Ingredients:"
+    - "%ingredients%"
+    - ""
+    - "&7You can craft: &f%max%x"
+    - "&eClick &7to craft 1"
+    - "&eShift-click &7to craft max"
+  quick-ingredient-line: "&8• &f%amount%x &7%name%"
+
+# ============================================================
+#  RECIPES
+#  type: shaped | shapeless
+#  Ingredient options:
+#    material: DIAMOND           single material
+#    material: "#planks"         any item in a Minecraft item tag
+#    materials: [A, B]           any of these
+#    amount: 2                   amount needed in that slot (default 1)
+#    name: "&cExtra Heart"       must have exactly this display name
+#    custom-model-data: 1001     must have this custom model data
+#  Result options: material, amount, name, lore, custom-model-data,
+#                  enchantments (NAME: level), flags, glow, unbreakable
+#  Optional per recipe: permission, quick-craft (default true), mirror (shaped, default true)
+# ============================================================
+recipes:
+
+  enchanted_golden_apple:
+    type: shaped
+    pattern:
+      - "GGG"
+      - "GAG"
+      - "GGG"
+    ingredients:
+      G: { material: GOLD_BLOCK }
+      A: { material: APPLE }
+    result:
+      material: ENCHANTED_GOLDEN_APPLE
+
+  # Shaped recipe smaller than 3x3: can be placed anywhere in the grid.
+  saddle:
+    type: shaped
+    pattern:
+      - "LLL"
+      - "S S"
+    ingredients:
+      L: { material: LEATHER }
+      S: { material: STRING }
+    result:
+      material: SADDLE
+
+  # Slot amounts: 4 iron ingots per slot.
+  chainmail_chestplate:
+    type: shaped
+    pattern:
+      - "I I"
+      - "III"
+      - "III"
+    ingredients:
+      I: { material: IRON_INGOT, amount: 4 }
+    result:
+      material: CHAINMAIL_CHESTPLATE
+
+  # Shapeless with an item tag.
+  name_tag:
+    type: shapeless
+    ingredients:
+      - { material: PAPER }
+      - { material: STRING }
+      - { material: "#planks" }
+    result:
+      material: NAME_TAG
+
+  # Custom item result (works with your resource pack via custom-model-data).
+  heart_shard:
+    type: shapeless
+    permission: visioncrafting.recipe.heartshard
+    ingredients:
+      - { material: REDSTONE_BLOCK, amount: 4 }
+      - { material: GOLDEN_APPLE }
+      - { material: AMETHYST_SHARD, amount: 8 }
+    result:
+      material: AMETHYST_SHARD
+      name: "&dHeart Shard"
+      lore:
+        - "&7A fragment of life."
+      custom-model-data: 1001
+      glow: true
+
+  # Custom item as ingredient (needs the exact name + model data).
+  heart_crystal:
+    type: shaped
+    pattern:
+      - " H "
+      - "HNH"
+      - " H "
+    ingredients:
+      H: { material: AMETHYST_SHARD, name: "&dHeart Shard", custom-model-data: 1001 }
+      N: { material: NETHER_STAR }
+    result:
+      material: NETHER_STAR
+      name: "&cHeart Crystal"
+      custom-model-data: 1002
+      enchantments:
+        UNBREAKING: 1
+      flags: [HIDE_ENCHANTS]
