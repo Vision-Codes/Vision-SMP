@@ -3,6 +3,7 @@
 /world_nether/
 /world_the_end/
 *.mca
+*.dat_old
 
 # Logs, caches, and temp files
 /logs/
@@ -13,9 +14,9 @@
 /crash-reports/
 
 # Player data and stats
-/world/playerdata/
-/world/stats/
-/world/advancements/
+**/playerdata/
+**/stats/
+**/advancements/
 
 # Plugin databases and local states
 *.db
