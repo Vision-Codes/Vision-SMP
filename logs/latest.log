@@ -1,199 +1,85 @@
-[16:26:27] [ServerMain/INFO]: [bootstrap] Running Java 26 (Java HotSpot(TM) 64-Bit Server VM 26+35-2893; Oracle Corporation null) on Windows 11 10.0 (amd64)
-[16:26:27] [ServerMain/INFO]: [bootstrap] Loading Paper 26.3-181-main@cc7ee9a (2026-10-13T16:20:13Z) for Minecraft 26.3
-[16:26:27] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
-[16:26:27] [ServerMain/INFO]: [PluginInitializerManager] Initialized 5 plugins
-[16:26:27] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (5):
- - ItemsAdder (4.1.0-beta-nativepackets-3), LuckPerms (5.5.87), Multiverse-Core (5.8.1), NativePackets (0.1.5), vision-core (1.0.0)
-[16:26:30] [DataConverter MCTypeRegistry init thread/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
-[16:26:30] [ServerMain/INFO]: [com.destroystokyo.paper.profile.PaperServicesDiscoveryService] Environment: Environment[discoveryUrl=https://discovery.minecraftservices.com/minecraft/client, name=PROD]
-[16:26:30] [DataConverter MCTypeRegistry init thread/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 262,0ms
-[16:26:31] [Worker-Main-5/INFO]: Loaded 1866 advancements
-[16:26:32] [Server thread/INFO]: Starting minecraft server version 26.3
-[16:26:32] [Server thread/INFO]: Loading properties
-[16:26:32] [Server thread/INFO]: This server is running Paper version 26.3-181-main@cc7ee9a (2026-10-13T16:20:13Z) (Implementing API version 26.3.build.181-stable)
-[16:26:32] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
-[16:26:32] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[16:26:32] [Server thread/INFO]: Using 4 threads for Netty based IO
-[16:26:32] [Server thread/INFO]: [MoonriseCommon] Paper is using 4 worker threads, 1 I/O threads
-[16:26:32] [Server thread/INFO]: Default game type: SURVIVAL
-[16:26:32] [Server thread/INFO]: Generating keypair
-[16:26:32] [Server thread/INFO]: Starting Minecraft server on *:25565
-[16:26:32] [Server thread/INFO]: Paper: Using Java compression from Velocity.
-[16:26:32] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
-[16:26:32] [Server thread/INFO]: [SpigotLibraryLoader] [ItemsAdder] Loading 1 libraries... please wait
-[16:26:33] [Server thread/INFO]: [SpigotLibraryLoader] [ItemsAdder] Loaded library C:\Users\thomm\OneDrive\Bureaublad\vision-smp\libraries\io\netty\netty-codec-http\4.1.118.Final\netty-codec-http-4.1.118.Final.jar
-[16:26:33] [Server thread/INFO]: [SpigotLibraryLoader] [ItemsAdder] Loaded library C:\Users\thomm\OneDrive\Bureaublad\vision-smp\libraries\io\netty\netty-common\4.1.118.Final\netty-common-4.1.118.Final.jar
-[16:26:33] [Server thread/INFO]: [SpigotLibraryLoader] [ItemsAdder] Loaded library C:\Users\thomm\OneDrive\Bureaublad\vision-smp\libraries\io\netty\netty-buffer\4.1.118.Final\netty-buffer-4.1.118.Final.jar
-[16:26:33] [Server thread/INFO]: [SpigotLibraryLoader] [ItemsAdder] Loaded library C:\Users\thomm\OneDrive\Bureaublad\vision-smp\libraries\io\netty\netty-transport\4.1.118.Final\netty-transport-4.1.118.Final.jar
-[16:26:33] [Server thread/INFO]: [SpigotLibraryLoader] [ItemsAdder] Loaded library C:\Users\thomm\OneDrive\Bureaublad\vision-smp\libraries\io\netty\netty-resolver\4.1.118.Final\netty-resolver-4.1.118.Final.jar
-[16:26:33] [Server thread/INFO]: [SpigotLibraryLoader] [ItemsAdder] Loaded library C:\Users\thomm\OneDrive\Bureaublad\vision-smp\libraries\io\netty\netty-codec\4.1.118.Final\netty-codec-4.1.118.Final.jar
-[16:26:33] [Server thread/INFO]: [SpigotLibraryLoader] [ItemsAdder] Loaded library C:\Users\thomm\OneDrive\Bureaublad\vision-smp\libraries\io\netty\netty-handler\4.1.118.Final\netty-handler-4.1.118.Final.jar
-[16:26:33] [Server thread/INFO]: [SpigotLibraryLoader] [ItemsAdder] Loaded library C:\Users\thomm\OneDrive\Bureaublad\vision-smp\libraries\io\netty\netty-transport-native-unix-common\4.1.118.Final\netty-transport-native-unix-common-4.1.118.Final.jar
-[16:26:33] [Server thread/INFO]: [NativePackets] Loading server plugin NativePackets v0.1.5
-[16:26:33] [Server thread/INFO]: [LuckPerms] Loading server plugin LuckPerms v5.5.87
-[16:26:33] [Server thread/INFO]: [LuckPerms] Loading configuration...
-[16:26:33] [Server thread/INFO]: [vision-core] Loading server plugin vision-core v1.0.0
-[16:26:33] [Server thread/INFO]: [CoreLogging] Loading server plugin Multiverse-Core v5.8.1
-[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading server plugin ItemsAdder v4.1.0-beta-nativepackets-3
-[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library FastNbt-jar (remapped)...
-[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library httpmime...
-[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library org.apache.httpcomponents:httpclient:4.5.14
-[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library org.apache.httpcomponents:httpcore:4.4.16
-[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library commons-logging:commons-logging:1.2
-[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library commons-codec:commons-codec:1.11
-[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library commons-math3...
-[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library speedy-math...
-[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library jansi...
-[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library fastjson...
-[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library com.alibaba.fastjson2:fastjson2-extension:2.0.43
-[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library com.alibaba.fastjson2:fastjson2:2.0.43
-[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library json-path...
-[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library net.minidev:json-smart:2.4.10
-[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library net.minidev:accessors-smart:2.4.9
-[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library org.ow2.asm:asm:9.3
-[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library org.slf4j:slf4j-api:1.7.36
-[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library armor-equip-event...
-[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library jctools-core...
-[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library glowingentities...
-[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library fr.skytasul:reflection-remapper:2.0.0
-[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library adventure-platform-bukkit...
-[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:adventure-platform-api:4.4.1
-[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:adventure-api:4.21.0
-[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:adventure-key:4.21.0
-[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:adventure-text-serializer-bungeecord:4.4.1
-[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:adventure-text-serializer-legacy:4.21.0
-[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:adventure-nbt:4.21.0
-[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:examination-api:1.3.0
-[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:examination-string:1.3.0
-[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library org.jetbrains:annotations:26.0.2
-[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:adventure-text-serializer-gson:4.21.0
-[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:adventure-text-serializer-json:4.21.0
-[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:option:1.1.0
-[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library org.jspecify:jspecify:1.0.0
-[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library com.google.auto.service:auto-service-annotations:1.1.1
-[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:adventure-text-serializer-commons:4.21.0
-[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:adventure-text-serializer-gson-legacy-impl:4.21.0
-[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:adventure-text-serializer-json-legacy-impl:4.21.0
-[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:adventure-platform-facet:4.4.1
-[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:adventure-platform-viaversion:4.4.1
-[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library adventure-text-serializer-gson...
-[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:adventure-text-serializer-json:5.1.1
-[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:adventure-api:5.1.1
-[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:adventure-key:5.1.1
-[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:option:1.1.0
-[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library com.google.code.gson:gson:2.13.2
-[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library com.google.errorprone:error_prone_annotations:2.41.0
-[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library com.google.auto.service:auto-service-annotations:1.1.1
-[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:adventure-text-serializer-commons:5.1.1
-[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library org.jspecify:jspecify:1.0.0
-[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library org.jetbrains:annotations:26.1.0
-[16:26:33] [Server thread/INFO]: [ItemsAdder] Loading library adventure-text-serializer-gson-legacy-impl...
-[16:26:34] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:adventure-text-serializer-gson:4.26.1
-[16:26:34] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:adventure-text-serializer-json:4.26.1
-[16:26:34] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:option:1.1.0
-[16:26:34] [Server thread/INFO]: [ItemsAdder] Loading library org.jspecify:jspecify:1.0.0
-[16:26:34] [Server thread/INFO]: [ItemsAdder] Loading library com.google.code.gson:gson:2.8.0
-[16:26:34] [Server thread/INFO]: [ItemsAdder] Loading library com.google.auto.service:auto-service-annotations:1.1.1
-[16:26:34] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:adventure-text-serializer-commons:4.26.1
-[16:26:34] [Server thread/INFO]: [ItemsAdder] Loading library org.jetbrains:annotations:26.0.2-1
-[16:26:34] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:adventure-text-serializer-json-legacy-impl:4.26.1
-[16:26:34] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:adventure-api:4.26.1
-[16:26:34] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:adventure-key:4.26.1
-[16:26:34] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:examination-api:1.3.0
-[16:26:34] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:examination-string:1.3.0
-[16:26:34] [Server thread/INFO]: [ItemsAdder] Loading library net.kyori:adventure-nbt:4.26.1
-[16:26:34] [Server thread/INFO]: [NativePackets] Enabling NativePackets v0.1.5
-[16:26:34] [Server thread/INFO]: [NativePackets] NativePackets bootstrap enabled for PAPER 26.3 on Java 26
-[16:26:34] [Server thread/INFO]: [NativePackets] NativePackets runtime: version=0.1.5 minecraft=26.3 protocol=777 platform=PAPER brand=Paper mappings=MOJANG adapter=paper-26.3 abi=7 verified=true injectedPipelines=1 adventure=true viaVersion=false folia=false
-[16:26:34] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.5.87
-[16:26:34] [Server thread/INFO]:         __    
-[16:26:34] [Server thread/INFO]:   |    |__)   LuckPerms v5.5.87
-[16:26:34] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
-[16:26:34] [Server thread/INFO]: 
-[16:26:34] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
-[16:26:34] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
-[16:26:34] [Server thread/INFO]: [LuckPerms] Performing initial data load...
-[16:26:34] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 498ms)
-[16:26:34] [Server thread/INFO]: Preparing level "world"
-[16:26:35] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:overworld'...
-[16:26:35] [Server thread/INFO]: Preparing spawn area: 100%
-[16:26:35] [Server thread/INFO]: Prepared spawn area in 2 ms
-[16:26:35] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:the_nether'...
-[16:26:35] [Server thread/INFO]: Prepared spawn area in 1 ms
-[16:26:35] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:the_end'...
-[16:26:35] [Server thread/INFO]: Prepared spawn area in 1 ms
-[16:26:35] [Server thread/INFO]: Loading 0 persistent chunks for level 'iris:visionsmp'...
-[16:26:35] [Server thread/INFO]: Prepared spawn area in 1 ms
-[16:26:35] [Server thread/INFO]: Loading 0 persistent chunks for level 'iris:smp'...
-[16:26:35] [Server thread/INFO]: Prepared spawn area in 1 ms
-[16:26:35] [Server thread/INFO]: Done preparing level "world" (0.505s)
-[16:26:35] [Server thread/INFO]: [vision-core] Enabling vision-core v1.0.0
-[16:26:35] [Server thread/INFO]: [vision-core] vision-core enabled.
-[16:26:35] [Server thread/INFO]: [Multiverse-Core] Enabling Multiverse-Core v5.8.1
-[16:26:35] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:survival'...
-[16:26:35] [Server thread/INFO]: Prepared spawn area in 7 ms
-[16:26:36] [Server thread/INFO]: [Multiverse-Core] API service loaded!
-[16:26:36] [Server thread/INFO]: [Multiverse-Core] Version 5.8.1 (API v5.8) Enabled - By dumptruckman, Rigby, fernferret, lithium3141, main--, benwoo1110 and Zax71
-[16:26:36] [Server thread/INFO]: [Multiverse-Core] Loving Multiverse-Core? Please consider supporting the project with a small donation: https://github.com/sponsors/Multiverse
-[16:26:36] [Server thread/INFO]: [ItemsAdder] Enabling ItemsAdder v4.1.0-beta-nativepackets-3
-[16:26:36] [Server thread/INFO]: ItemsAdder » 
-                                                   ItemsAdder 4.1.0-beta-nativepackets-3
-  ___  ___        __        __   __   ___  __      NativePackets 0.1.5
-|  |  |__   |\/| /__`  /\  |  \ |  \ |__  |__)     Paper 26.3-181-cc7ee9a (MC: 26.3)
-|  |  |___  |  | .__/ /--\ |__/ |__/ |___ |  \     Build Date: dev
-                                                   Java Version: 26
-                                                   OS: Windows 11 10.0                                               
-[16:26:36] [Server thread/INFO]: ItemsAdder » [License] Discord public beta build.
-[16:26:43] [Server thread/INFO]: [spark] Starting background profiler...
-[16:26:43] [Server thread/INFO]: [spark] The async-profiler engine is not supported for your os/arch (windows11/amd64), so the built-in Java engine will be used instead.
-[16:26:43] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[16:26:43] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
-[16:26:43] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
-[16:26:43] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/iris:visionsmp
-[16:26:43] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/iris:smp
-[16:26:43] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:survival
-[16:26:43] [Server thread/INFO]: Running delayed init tasks
-[16:26:44] [Craft Scheduler Thread - 0 - NativePackets/INFO]: [NativePackets] No newer compatible NativePackets release
-[16:26:45] [Server thread/INFO]: ItemsAdder » [Content] Loaded 7 items
-[16:26:45] [Server thread/INFO]: ItemsAdder » Used Blocks IDs:
-[16:26:45] [Server thread/INFO]: ItemsAdder »  - REAL 0/188
-[16:26:45] [Server thread/INFO]: ItemsAdder »  - REAL_NOTE 0/750
-[16:26:45] [Server thread/INFO]: ItemsAdder »  - REAL_TRANSPARENT 0/63
-[16:26:45] [Server thread/INFO]: ItemsAdder » Used Font Images: 27/6608
-[16:26:45] [User Authenticator #0/INFO]: UUID of player snowduck1 is 8b1d5a8b-d3fe-4be1-ad61-b1b4ff7989b9
-[16:26:45] [Server thread/INFO]: ItemsAdder » [Content] Loaded 1 categories
-[16:26:45] [Server thread/INFO]: ItemsAdder » Registering 0 recipes...
-[16:26:45] [Server thread/INFO]: ItemsAdder » Registered 0 recipes.
-[16:26:45] [Server thread/INFO]: ItemsAdder » [Content] Contents loaded successfully!
-[16:26:45] [Server thread/INFO]: ItemsAdder » [Pack] per_client_version: preparing 9 packs in background...
-[16:26:45] [Server thread/INFO]: ItemsAdder » ResourcePack
-[16:26:45] [Server thread/INFO]: ItemsAdder »  - Path: /vision-smp/plugins/ItemsAdder/output/generated.zip
-[16:26:45] [Server thread/INFO]: ItemsAdder »  - Download: http://127.0.1.1:25565/resourcepack
-[16:26:45] [Server thread/INFO]: ItemsAdder »  - Size: 1 MB/250 MB (0%)
-[16:26:45] [Server thread/INFO]: Done (19.420s)! For help, type "help"
-[16:26:45] [Server thread/INFO]: snowduck1 (/127.0.0.1:60386) lost connection: Disconnected
-[16:26:45] [Server thread/INFO]: [HorriblePlayerLoginEventHack] You have plugins listening to the PlayerLoginEvent, this will cause re-configuration APIs to be unavailable: [LuckPerms]
-[16:26:46] [Paper Async Task Handler Thread - 1/INFO]: *** Currently you are 2 builds behind ***
-[16:26:46] [Paper Async Task Handler Thread - 1/INFO]: *** It is highly recommended to download the latest build from https://papermc.io/downloads/paper ***
-[16:26:46] [ItemsAdder_client_pack/INFO]: ItemsAdder » [Pack] per_client_version: 9/9 packs ready in 167 ms.
-[16:26:48] [Server thread/INFO]: System chat: snowduck1 joined the game
-[16:26:48] [Server thread/INFO]: snowduck1[/127.0.0.1:63723] logged in with entity id 1 at ([minecraft:overworld]100.57892846943457, 58.5, 94.85389431648807)
-[16:26:48] [Server thread/WARN]: snowduck1 moved too quickly! 100.57892846943457,58.5,94.85389431648807
-[16:27:02] [Server thread/INFO]: snowduck1 issued server command: /vc heart give snowduck1
-[16:28:50] [Server thread/INFO]: snowduck1 issued server command: /gamemode creative
-[16:28:50] [Server thread/INFO]: System chat: [snowduck1: Set own game mode to Creative Mode]
-[16:29:38] [Server thread/INFO]: snowduck1 issued server command: /enchant snowduck1 minecraft:breach 4
-[16:29:38] [Server thread/INFO]: System chat: [snowduck1: Applied enchantment Breach IV to snowduck1's item]
-[16:29:44] [Server thread/INFO]: snowduck1 issued server command: /enchant snowduck1 minecraft:density 4
-[16:29:51] [Server thread/INFO]: snowduck1 issued server command: /enchant snowduck1 minecraft:density 2
-[16:30:06] [Server thread/INFO]: snowduck1 issued server command: /gamemode survival
-[16:30:06] [Server thread/INFO]: System chat: [snowduck1: Set own game mode to Survival Mode]
-[16:30:15] [Server thread/INFO]: snowduck1 issued server command: /gamemode creative
-[16:30:15] [Server thread/INFO]: System chat: [snowduck1: Set own game mode to Creative Mode]
-[16:30:33] [Server thread/INFO]: snowduck1 issued server command: /mv list
-[16:30:39] [Server thread/INFO]: snowduck1 issued server command: /mv tp survival
-[16:31:13] [Server thread/INFO]: snowduck1 issued server command: /gamemode creative
-[16:31:13] [Server thread/INFO]: System chat: [snowduck1: Set own game mode to Creative Mode]
-[16:31:26] [Server thread/INFO]: snowduck1 issued server command: /mv tp world
-[16:36:01] [Server thread/INFO]: snowduck1 issued server command: /gamemode creative
-[16:36:01] [Server thread/INFO]: System chat: [snowduck1: Set own game mode to Creative Mode]
+[19:33:14] [ServerMain/INFO]: [bootstrap] Running Java 26 (Java HotSpot(TM) 64-Bit Server VM 26+35-2893; Oracle Corporation null) on Windows 11 10.0 (amd64)
+[19:33:14] [ServerMain/INFO]: [bootstrap] Loading Paper 26.3-181-main@cc7ee9a (2026-10-13T16:20:13Z) for Minecraft 26.3
+[19:33:14] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[19:33:14] [ServerMain/INFO]: [PluginInitializerManager] Initialized 5 plugins
+[19:33:14] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (5):
+ - LuckPerms (5.5.87), Multiverse-Core (5.8.1), NativePackets (0.1.6), VisionStands (1.0.0), vision-core (1.0.0)
+[19:33:17] [DataConverter MCTypeRegistry init thread/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
+[19:33:17] [ServerMain/INFO]: [com.destroystokyo.paper.profile.PaperServicesDiscoveryService] Environment: Environment[discoveryUrl=https://discovery.minecraftservices.com/minecraft/client, name=PROD]
+[19:33:17] [DataConverter MCTypeRegistry init thread/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 275,2ms
+[19:33:18] [Worker-Main-2/INFO]: Loaded 1866 advancements
+[19:33:19] [Server thread/INFO]: Starting minecraft server version 26.3
+[19:33:19] [Server thread/INFO]: Loading properties
+[19:33:19] [Server thread/INFO]: This server is running Paper version 26.3-181-main@cc7ee9a (2026-10-13T16:20:13Z) (Implementing API version 26.3.build.181-stable)
+[19:33:19] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[19:33:19] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[19:33:19] [Server thread/INFO]: Using 4 threads for Netty based IO
+[19:33:19] [Server thread/INFO]: [MoonriseCommon] Paper is using 4 worker threads, 1 I/O threads
+[19:33:19] [Server thread/INFO]: Default game type: SURVIVAL
+[19:33:19] [Server thread/INFO]: Generating keypair
+[19:33:19] [Server thread/INFO]: Starting Minecraft server on *:25565
+[19:33:19] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[19:33:19] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[19:33:19] [Server thread/INFO]: [VisionStands] Loading server plugin VisionStands v1.0.0
+[19:33:19] [Server thread/INFO]: [vision-core] Loading server plugin vision-core v1.0.0
+[19:33:19] [Server thread/INFO]: [NativePackets] Loading server plugin NativePackets v0.1.6
+[19:33:19] [Server thread/INFO]: [CoreLogging] Loading server plugin Multiverse-Core v5.8.1
+[19:33:19] [Server thread/INFO]: [LuckPerms] Loading server plugin LuckPerms v5.5.87
+[19:33:20] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[19:33:20] [Server thread/INFO]: [NativePackets] Enabling NativePackets v0.1.6
+[19:33:20] [Server thread/INFO]: [NativePackets] NativePackets bootstrap enabled for PAPER 26.3 on Java 26
+[19:33:20] [Server thread/INFO]: [NativePackets] NativePackets runtime: version=0.1.6 minecraft=26.3 protocol=777 platform=PAPER brand=Paper mappings=MOJANG adapter=paper-26.3 abi=7 verified=true injectedPipelines=1 adventure=true viaVersion=false folia=false
+[19:33:20] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.5.87
+[19:33:20] [Server thread/INFO]:         __    
+[19:33:20] [Server thread/INFO]:   |    |__)   LuckPerms v5.5.87
+[19:33:20] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
+[19:33:20] [Server thread/INFO]: 
+[19:33:20] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
+[19:33:20] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[19:33:20] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[19:33:20] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 635ms)
+[19:33:20] [Server thread/INFO]: Preparing level "world"
+[19:33:21] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:overworld'...
+[19:33:21] [Server thread/INFO]: Preparing spawn area: 100%
+[19:33:21] [Server thread/INFO]: Prepared spawn area in 2 ms
+[19:33:21] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:the_nether'...
+[19:33:21] [Server thread/INFO]: Prepared spawn area in 1 ms
+[19:33:21] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:the_end'...
+[19:33:21] [Server thread/INFO]: Prepared spawn area in 1 ms
+[19:33:21] [Server thread/INFO]: Done preparing level "world" (0.476s)
+[19:33:21] [Server thread/INFO]: [VisionStands] Enabling VisionStands v1.0.0
+[19:33:21] [Server thread/INFO]: [VisionStands] Loaded 2 NPC(s).
+[19:33:21] [Server thread/INFO]: [vision-core] Enabling vision-core v1.0.0
+[19:33:21] [Server thread/INFO]: [vision-core] Exchange: 4 trade(s) loaded.
+[19:33:21] [Server thread/INFO]: [vision-core] vision-core enabled.
+[19:33:21] [Server thread/INFO]: [Multiverse-Core] Enabling Multiverse-Core v5.8.1
+[19:33:22] [Server thread/ERROR]: [Multiverse-Core] Failed to autoload world 'survival': Failure{reason=WORLD_FOLDER_INVALID}: World 'survival' folder contents does not seem to be a valid world! Make sure it contains the correct world structure of data and region folders.
+If the server software does something different with world folders, or you are very certain the world is valid, use '--skip-folder-check' flag.
+[19:33:22] [Server thread/INFO]: [Multiverse-Core] API service loaded!
+[19:33:22] [Server thread/INFO]: [Multiverse-Core] Version 5.8.1 (API v5.8) Enabled - By dumptruckman, Rigby, fernferret, lithium3141, main--, benwoo1110 and Zax71
+[19:33:22] [Server thread/INFO]: [Multiverse-Core] Loving Multiverse-Core? Please consider supporting the project with a small donation: https://github.com/sponsors/Multiverse
+[19:33:22] [Server thread/INFO]: [spark] Starting background profiler...
+[19:33:22] [Server thread/INFO]: [spark] The async-profiler engine is not supported for your os/arch (windows11/amd64), so the built-in Java engine will be used instead.
+[19:33:22] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[19:33:22] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[19:33:22] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[19:33:22] [Server thread/INFO]: Running delayed init tasks
+[19:33:23] [Server thread/INFO]: Done (9.444s)! For help, type "help"
+[19:33:23] [Craft Scheduler Thread - 1 - NativePackets/INFO]: [NativePackets] No newer compatible NativePackets release
+[19:33:23] [Paper Async Task Handler Thread - 1/INFO]: *** Currently you are 12 builds behind ***
+[19:33:23] [Paper Async Task Handler Thread - 1/INFO]: *** It is highly recommended to download the latest build from https://papermc.io/downloads/paper ***
+[19:33:25] [User Authenticator #0/INFO]: UUID of player snowduck1 is 8b1d5a8b-d3fe-4be1-ad61-b1b4ff7989b9
+[19:33:26] [Server thread/INFO]: [HorriblePlayerLoginEventHack] You have plugins listening to the PlayerLoginEvent, this will cause re-configuration APIs to be unavailable: [LuckPerms]
+[19:33:26] [Server thread/INFO]: System chat: snowduck1 joined the game
+[19:33:26] [Server thread/INFO]: snowduck1[/127.0.0.1:51408] logged in with entity id 2 at ([minecraft:overworld]-58.51197350184024, 72.0, 11.575892474291788)
+[19:33:26] [Server thread/WARN]: snowduck1 moved too quickly! -58.51197350184024,72.0,11.575892474291788
+[19:33:28] [Server thread/INFO]: Environment: Environment[discoveryUrl=https://discovery.minecraftservices.com/minecraft/client, name=PROD]
+[19:36:03] [Server thread/INFO]: snowduck1 issued server command: /give @s cobblestone[item_model="vision:coin_stack"]
+[19:36:03] [Server thread/INFO]: System chat: [snowduck1: Gave 1 [Cobblestone] to snowduck1]
+[19:36:17] [Server thread/INFO]: snowduck1 issued server command: /revive
+[19:36:26] [Server thread/INFO]: snowduck1 issued server command: /heal
+[19:45:21] [Server thread/INFO]: snowduck1 issued server command: /kit
+[19:48:08] [Server thread/INFO]: snowduck1 issued server command: /gamemode creative
+[19:48:08] [Server thread/INFO]: System chat: [snowduck1: Set own game mode to Creative Mode]
+[19:48:24] [Server thread/INFO]: snowduck1 issued server command: /gamemode survival
+[19:48:24] [Server thread/INFO]: System chat: [snowduck1: Set own game mode to Survival Mode]
