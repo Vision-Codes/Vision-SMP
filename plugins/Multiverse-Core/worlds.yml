@@ -242,7 +242,7 @@ minecraft:overworld:
     environment: normal
     generator-settings: ''
     legacy-world-name: world
-    seed: 1312252565095656571
+    seed: 5419184671389297653
   version: 1.3
 minecraft:survival:
   adjust-spawn: true
@@ -406,7 +406,7 @@ minecraft:the_end:
     environment: the_end
     generator-settings: ''
     legacy-world-name: world_the_end
-    seed: 1312252565095656571
+    seed: 5419184671389297653
   version: 1.3
 minecraft:the_nether:
   adjust-spawn: true
@@ -488,5 +488,5 @@ minecraft:the_nether:
     environment: nether
     generator-settings: ''
     legacy-world-name: world_nether
-    seed: 1312252565095656571
+    seed: 5419184671389297653
   version: 1.3

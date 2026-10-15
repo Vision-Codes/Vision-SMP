@@ -1,3 +1,6 @@
+chat:
+  enabled: true
+  format: <prefix><player> <dark_gray>» <gray><message>
 # vision-core configuration
 #
 # MOTD
@@ -77,6 +80,18 @@ economy:
       starting-balance: 0
       payable: true
       max-balance: 0
+    gems:
+      name: Gems
+      singular: Gem
+      color: '&b'
+      starting-balance: 0
+      payable: false
+    coin_stacks:
+      name: Coin Stacks
+      singular: Coin Stack
+      color: '&e'
+      starting-balance: 0
+      payable: true
 # Example of a second currency (remove the # signs, then /vc reload):
 # gems:
 #   name: "Gems"
@@ -122,6 +137,7 @@ tablist:
   - <aqua>store.minecraft.vision
   - ''
   default-rank:
+    chat-prefix: ''
     name: Player
     format: <gray><player>
   ranks:
@@ -129,38 +145,47 @@ tablist:
       name: Owner
       permission: group.owner
       format: <white></white> <white><player>
+      chat-prefix: '<white></white> '
     admin:
       name: Admin
       permission: group.admin
       format: <white></white> <white><player>
+      chat-prefix: '<white></white> '
     developer:
       name: Developer
       permission: group.developer
       format: <white></white> <white><player>
+      chat-prefix: '<white></white> '
     mod:
       name: Mod
       permission: group.mod
       format: <white></white> <white><player>
+      chat-prefix: '<white></white> '
     helper:
       name: Helper
       permission: group.helper
       format: <white></white> <white><player>
+      chat-prefix: '<white></white> '
     builder:
       name: Builder
       permission: group.builder
       format: <white></white> <white><player>
+      chat-prefix: '<white></white> '
     vip:
       name: VIP
       permission: group.vip
       format: <white></white> <white><player>
+      chat-prefix: '<white></white> '
     vip+:
       name: VIP+
       permission: group.vip_plus
       format: <white></white> <white><player>
+      chat-prefix: '<white></white> '
     member:
       name: Member
       permission: group.member
-      format: "<white>\uE100</white> <white><player>"
+      format: <white></white> <white><player>
+      chat-prefix: '<white></white> '
 
 # PERSONAL LOOT
 #   Every player gets their own copy of the loot in generated chests (villages, shipwrecks, buried treasure,
@@ -186,6 +211,18 @@ settings:
   respawn-at-spawn: true
 
 messages:
+  exchange-empty-admin: '&7(Staff) Check the console: trades that are skipped are
+    listed there with the reason.'
+  exchange-usage: '&cUsage: /vc exchange <set|remove|tp>'
+  exchange-set: '&aExchange villager placed at your location.'
+  exchange-removed: '&aExchange villager removed.'
+  exchange-not-set: '&cThe exchange villager has not been placed yet. Stand where
+    he should be and use /vc exchange set.'
+  exchange-tp: '&aTeleported to the exchange villager.'
+  exchange-empty: '&cThere are no trades set up yet.'
+  exchange-success: '&aTraded {pay}&a for {receive}&a.'
+  exchange-no-funds: '&cYou don''t have enough {currency}.'
+  exchange-target-full: '&cYou can''t hold that much more {currency}.'
   prefix: '&8[&bVision&8] &7'
   no-permission: '&cYou don''t have permission to do that.'
   players-only: '&cOnly players can use this.'
@@ -238,3 +275,64 @@ messages:
     them again.'
   loot-reset-all: '&aPersonal loot reset for all players.'
   loot-protected: '&cLoot chests can''t be broken, they are shared by everyone.'
+config-version: 3
+exchange:
+  gui:
+    resource-pack: true
+    background: 
+    item-models:
+      gems: vision:gem
+      gold_coins: vision:gold_coin
+      coin_stacks: vision:coin_stack
+  enabled: true
+  title: '&8Exchange'
+  villager:
+    name: '&6&lExchange Merchant'
+    profession: LIBRARIAN
+  trades:
+    gems_to_coins:
+      icon: EMERALD
+      pay:
+        currency: gems
+        amount: 1
+      receive:
+        currency: gold_coins
+        amount: 128
+    gems_to_stacks:
+      icon: EMERALD_BLOCK
+      pay:
+        currency: gems
+        amount: 1
+      receive:
+        currency: coin_stacks
+        amount: 2
+    coins_to_stack:
+      icon: GOLD_INGOT
+      pay:
+        currency: gold_coins
+        amount: 64
+      receive:
+        currency: coin_stacks
+        amount: 1
+    stack_to_coins:
+      icon: GOLD_NUGGET
+      pay:
+        currency: coin_stacks
+        amount: 1
+      receive:
+        currency: gold_coins
+        amount: 64
+  location:
+    world: world
+    x: -58.48566196940686
+    y: 72.0
+    z: 14.300248910099773
+    yaw: -178.89597
+    pitch: 0.0
+spawn:
+  world: world
+  x: 0.5
+  y: 71.0
+  z: 0.5
+  yaw: 90.71893
+  pitch: -1.3499957
