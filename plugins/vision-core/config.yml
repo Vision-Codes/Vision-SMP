@@ -1,3 +1,15 @@
+resource-pack:
+  enabled: false
+  required: true
+  url: ''
+  sha1: ''
+  prompt: '&bVision SMP &7needs its resource pack to play.'
+  timeout-seconds: 60
+mana:
+  enabled: true
+  max: 100
+  regen-per-second: 2.0
+  show-bar: true
 chat:
   enabled: true
   format: <prefix><player> <dark_gray>» <gray><message>
@@ -73,13 +85,6 @@ economy:
       starting-balance: 0
       payable: true
       max-balance: 0
-    coin_stack:
-      name: Coin Stacks
-      singular: Coin Stack
-      color: '&e'
-      starting-balance: 0
-      payable: true
-      max-balance: 0
     gems:
       name: Gems
       singular: Gem
@@ -132,7 +137,7 @@ tablist:
   footer:
   - ''
   - '<gray>Players online: <white><online><dark_gray>/<white><max>'
-  - '<gray>: <red><hearts> <gray>: <gold><balance> <gray>: <gold><bal_coin_stack>'
+  - '<gray>: <gold><balance> <gray>: <gold><bal_coin_stacks> <gray>: <aqua><bal_gems>'
   - ''
   - <aqua>store.minecraft.vision
   - ''
@@ -186,6 +191,21 @@ tablist:
       permission: group.member
       format: <white></white> <white><player>
       chat-prefix: '<white></white> '
+    youtube:
+      name: Youtube
+      permission: group.youtube
+      format: <white></white> <white><player>
+      chat-prefix: '<white></white> '
+    twitch:
+      name: Twitch
+      permission: group.twitch
+      format: <white></white> <white><player>
+      chat-prefix: '<white></white> '
+    kick:
+      name: Kick
+      permission: group.kick
+      format: <white></white> <white><player>
+      chat-prefix: '<white></white> '
 
 # PERSONAL LOOT
 #   Every player gets their own copy of the loot in generated chests (villages, shipwrecks, buried treasure,
@@ -211,6 +231,24 @@ settings:
   respawn-at-spawn: true
 
 messages:
+  mana-show: '&9Mana: &b{mana}&7/&b{max}'
+  mana-usage: '&cUsage: /mana <set|give|take> <player> <amount>'
+  mana-updated: '&a{player} now has &b{mana}&7/&b{max} &amana.'
+  resourcepack-declined: |-
+    &c&lResource pack required
+
+    &7You need to accept the Vision SMP resource pack to play.
+    &7In the server list: &fEdit &8> &fServer Resource Packs: &aEnabled&7.
+  resourcepack-failed: |-
+    &c&lResource pack failed
+
+    &7The Vision SMP resource pack could not be downloaded or loaded.
+    &7Please try joining again.
+  resourcepack-timeout: |-
+    &c&lResource pack required
+
+    &7The resource pack was not loaded in time.
+    &7Please try joining again.
   exchange-empty-admin: '&7(Staff) Check the console: trades that are skipped are
     listed there with the reason.'
   exchange-usage: '&cUsage: /vc exchange <set|remove|tp>'
