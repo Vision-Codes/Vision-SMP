@@ -1,0 +1,38 @@
+{
+  "stats": {
+    "minecraft:picked_up": {
+      "minecraft:gold_nugget": 3
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 111302,
+      "minecraft:walk_one_cm": 24346,
+      "minecraft:leave_game": 1,
+      "minecraft:walk_under_water_one_cm": 5517,
+      "minecraft:damage_taken": 130,
+      "minecraft:interact_with_lectern": 1,
+      "minecraft:play_time": 111302,
+      "minecraft:jump": 699,
+      "minecraft:time_since_death": 111302,
+      "minecraft:drop": 5,
+      "minecraft:open_barrel": 2,
+      "minecraft:sprint_one_cm": 81665,
+      "minecraft:fall_one_cm": 7120,
+      "minecraft:swim_one_cm": 12295,
+      "minecraft:total_world_time": 111302,
+      "minecraft:fly_one_cm": 1031991,
+      "minecraft:walk_on_water_one_cm": 8519,
+      "minecraft:crouch_one_cm": 961,
+      "minecraft:sneak_time": 1511,
+      "minecraft:climb_one_cm": 2867
+    },
+    "minecraft:used": {
+      "minecraft:brown_cushion": 2
+    },
+    "minecraft:dropped": {
+      "minecraft:gold_nugget": 3,
+      "minecraft:spruce_fence": 1,
+      "minecraft:cobblestone": 1
+    }
+  },
+  "DataVersion": 5023
+}
