@@ -25,6 +25,27 @@ The Big Vision SMP RP
 Je lokale server maakt bij de eerste start een eigen wereld aan. Wil je met de echte wereld testen,
 download dan een backup uit het Etheron-paneel en zet die in `world/`.
 
+## Builds met schematics
+
+Grote builds (zoals de hub) maken we als schematic en plakken we met WorldEdit.
+
+1. Download **WorldEdit** voor Paper 26.2 (https://modrinth.com/plugin/worldedit of
+   https://hangar.papermc.io/EngineHub/WorldEdit) en zet de jar in `plugins/`.
+2. Zet je `.schem`-bestand in `plugins/WorldEdit/schematics/`.
+   Schematics in die map staan in git en gaan na een merge naar `main` ook naar Etheron.
+3. In-game, op de plek waar de build moet komen:
+   ```
+   //schem load <naam>
+   //paste -a
+   ```
+   (`-a` slaat lucht over; `//undo` als het niet goed staat.)
+4. Maak de deuren of poorten tot portals: ga in de opening op de ene hoek staan `/hub pos1`,
+   de andere hoek `/hub pos2`, dan `/hub portal create <naam> <modus>`.
+5. Zet de spawn van de hub: `/mv setspawn` (of `/setworldspawn`) op de plek waar spelers moeten beginnen.
+
+Werelden zitten niet in git: gebouwd op je lokale server? Upload de wereldmap één keer naar
+Etheron (server uit, via het paneel of SFTP). Of plak de schematic direct op Etheron.
+
 ## Eigen plugins
 
 De broncode staat in `src/`. Een nieuwe plugin maak je met `src/new-plugin.ps1`, bouwen met

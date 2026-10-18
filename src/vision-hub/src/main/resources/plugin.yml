@@ -9,12 +9,12 @@ softdepend: [Multiverse-Core]
 commands:
   hub:
     description: Ga naar de hub. Admins beheren hiermee de portals.
-    usage: /hub | /hub build | /hub pos1|pos2 | /hub portal create <naam> <modus> | /hub portal remove <naam> | /hub portal list | /hub reload
+    usage: /hub | /hub pos1|pos2 | /hub portal create <naam> <modus> | /hub portal remove <naam> | /hub portal list | /hub reload
     aliases: [lobby]
 
 permissions:
   hub.admin:
-    description: De hub bouwen, portals beheren en /hub reload.
+    description: Portals beheren en /hub reload.
     default: op
   hub.build:
     description: Bouwen in beschermde modi (hub, parkour).

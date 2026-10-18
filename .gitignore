@@ -42,6 +42,9 @@ plugins/pStats/
 plugins/vision-core/balances.yml
 plugins/vision-core/hearts.yml
 plugins/VisionStands/stands.yml
+# WorldEdit: per-speler sessies en tijdelijke bestanden (schematics/ blijft in git)
+plugins/WorldEdit/sessions/
+plugins/WorldEdit/.archive-unpack/
 # Werelden en anchors die je op de server aanmaakt (/mv create) blijven daar
 plugins/Multiverse-Core/worlds.yml
 plugins/Multiverse-Core/anchors.yml
