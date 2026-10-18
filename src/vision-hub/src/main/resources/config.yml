@@ -1,0 +1,49 @@
+# Na een aanpassing: /hub reload (geen herstart nodig)
+
+# Spelers gaan bij het joinen altijd naar de hub
+join-at-hub: true
+
+# Welke modus de hub is (/hub stuurt je naar de spawn van de eerste wereld)
+hub-mode: hub
+
+# Elke modus heeft een eigen inventory, ender chest, XP en health.
+# worlds:    de werelden van die modus (maak ze aan met /mv create). De eerste is waar een portal je heen stuurt
+#            (de plek waar je de modus verliet, of anders de spawn van die wereld).
+# gamemode:  survival, adventure, creative of spectator
+# protected: geen bouwen, geen schade en geen honger (behalve met permissie hub.build)
+modes:
+  hub:
+    worlds: [hub]
+    gamemode: adventure
+    protected: true
+  survival:
+    worlds: [survival, survival_nether, survival_the_end]
+    gamemode: survival
+    protected: false
+  smp:
+    worlds: [smp, smp_nether, smp_the_end]
+    gamemode: survival
+    protected: false
+  parkour:
+    worlds: [parkour]
+    gamemode: adventure
+    protected: true
+
+# Teksten in MiniMessage-opmaak: https://docs.advntr.dev/minimessage/format.html
+messages:
+  prefix: "<gold>[Hub]</gold> "
+  mode-joined: "Je bent nu in <yellow><mode></yellow>."
+  mode-unavailable: "<red>Modus <mode> is niet beschikbaar (bestaat de wereld?)."
+  no-hub: "<red>De hub-wereld bestaat niet. Maak hem aan met /mv create."
+  players-only: "<red>Dit kan alleen in-game."
+  no-permission: "<red>Daar heb je geen rechten voor."
+  reloaded: "<green>Config herladen."
+  usage: "Gebruik: /hub, /hub pos1, /hub pos2, /hub portal create <naam> <modus>, /hub portal remove <naam>, /hub portal list, /hub reload"
+  pos-set: "<pos> gezet op <x>, <y>, <z>."
+  select-first: "<red>Zet eerst pos1 en pos2 in dezelfde wereld (/hub pos1, /hub pos2)."
+  unknown-mode: "<red>Onbekende modus: <mode>."
+  portal-created: "<green>Portal <name> naar <mode> gemaakt."
+  portal-removed: "<green>Portal <name> verwijderd."
+  unknown-portal: "<red>Portal <name> bestaat niet."
+  no-portals: "Er zijn nog geen portals."
+  portal-entry: "<yellow><name></yellow> -> <mode> (<world>)"

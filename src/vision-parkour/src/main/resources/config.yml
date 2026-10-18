@@ -1,0 +1,41 @@
+# Na een aanpassing: /parkour reload (geen herstart nodig)
+
+# Hoeveel blokken je onder je laatste checkpoint mag vallen voordat je wordt teruggezet
+fall-depth: 5
+
+# Commando's (vanuit de console) als iemand een parkour voor het eerst haalt.
+# %player% = naam van de speler, %course% = naam van de parkour.
+first-completion-commands:
+  - "visioncore eco give %player% 100"
+
+# Teksten in MiniMessage-opmaak: https://docs.advntr.dev/minimessage/format.html
+messages:
+  prefix: "<aqua>[Parkour]</aqua> "
+  timer: "<aqua>⏱ <white><time>"
+  started: "Gestart: <yellow><course></yellow>. Succes!"
+  checkpoint: "Checkpoint <yellow><number>/<total></yellow> <gray>(<time>)"
+  skipped-checkpoint: "<red>Je hebt een checkpoint overgeslagen."
+  missed-checkpoints: "<red>Je hebt nog niet alle checkpoints gehad."
+  finished: "Gehaald in <yellow><time></yellow>."
+  finished-best: "<green>Nieuw persoonlijk record: <yellow><time></yellow>!"
+  record: "<gold><player></gold> heeft het record van <yellow><course></yellow> verbroken: <yellow><time></yellow>!"
+  not-running: "<red>Je bent niet bezig met een parkour."
+  left: "Parkour gestopt."
+  no-courses: "Er zijn nog geen parkours."
+  course-entry: "<yellow><course></yellow> <gray>(<checkpoints> checkpoints)"
+  course-entry-unfinished: "<yellow><course></yellow> <red>(nog geen start of finish)"
+  top-header: "<gold>Top 10 - <course>"
+  top-empty: "<gray>Nog niemand heeft deze parkour gehaald."
+  top-entry: "<gray><rank>.</gray> <white><player></white> <yellow><time>"
+  unknown-course: "<red>Parkour <course> bestaat niet."
+  course-exists: "<red>Parkour <course> bestaat al."
+  course-created: "<green>Parkour <course> gemaakt. Ga op drukplaten staan en gebruik setstart, addcheckpoint en setfinish."
+  course-deleted: "<green>Parkour <course> verwijderd."
+  checkpoint-removed: "Laatste checkpoint van <course> verwijderd (<checkpoints> over)."
+  plate-set: "<green><what> opgeslagen voor <course></green> <gray>(<checkpoints> checkpoints)"
+  stand-on-plate: "<red>Ga op een drukplaat staan."
+  players-only: "<red>Dit kan alleen in-game."
+  no-permission: "<red>Daar heb je geen rechten voor."
+  reloaded: "<green>Config en parkours herladen."
+  usage: "Gebruik: /parkour checkpoint, /parkour leave, /parkour top <naam>, /parkour list"
+  usage-admin: "Gebruik: /parkour checkpoint|leave|top|list, admin: create|setstart|addcheckpoint|removecheckpoint|setfinish|delete <naam>, reload"

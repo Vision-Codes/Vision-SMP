@@ -1,0 +1,24 @@
+name: VisionHub
+version: '${version}'
+main: nl.codebyvision.hub.VisionHub
+api-version: '1.21'
+author: Code by Vision
+description: '${description}'
+softdepend: [Multiverse-Core]
+
+commands:
+  hub:
+    description: Ga naar de hub. Admins beheren hiermee de portals.
+    usage: /hub | /hub pos1|pos2 | /hub portal create <naam> <modus> | /hub portal remove <naam> | /hub portal list | /hub reload
+    aliases: [lobby]
+
+permissions:
+  hub.admin:
+    description: Portals beheren en /hub reload.
+    default: op
+  hub.build:
+    description: Bouwen in beschermde modi (hub, parkour).
+    default: op
+  hub.keepgamemode:
+    description: Je gamemode blijft hetzelfde bij wisselen van modus.
+    default: false
