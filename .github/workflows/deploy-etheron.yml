@@ -19,7 +19,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: lftp installeren
         run: sudo apt-get update -qq && sudo apt-get install -y -qq lftp
@@ -31,11 +31,12 @@ jobs:
           SFTP_USER: ${{ secrets.SFTP_USER }}
           LFTP_PASSWORD: ${{ secrets.SFTP_PASSWORD }}
         # server.properties en de Paper-jar beheert het paneel zelf, die slaan we over
+        # --no-perms: het SFTP van Pterodactyl staat chmod niet toe
         run: |
           lftp --env-password -u "$SFTP_USER" -p "${SFTP_PORT:-2022}" "sftp://$SFTP_HOST" -e "
             set sftp:auto-confirm yes
             set net:max-retries 3
-            mirror --reverse --verbose \
+            mirror --reverse --verbose --no-perms \
               --exclude-glob .git/ \
               --exclude-glob .github/ \
               --exclude-glob .gitignore \
