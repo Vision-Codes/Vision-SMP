@@ -1,28 +1,51 @@
-# World and map files
+# Alles wat de server zelf aanmaakt of wat per server verschilt hoort NIET in git.
+# Wat wel in git staat (plugin-jars en configs) wordt bij een push naar main op Etheron gezet.
+
+# Werelden (binair, niet te mergen) - bouwen doe je op de Etheron-server
 /world/
 /world_nether/
 /world_the_end/
+/iris*/
 *.mca
-*.dat_old
 
-# Logs, caches, and temp files
+# Server-jar: download Paper 26.2 zelf en sla op als server.jar (zie README)
+/server.jar
+/paper-*.jar
+
+# Wordt door Paper bij het opstarten zelf gedownload/aangemaakt
 /logs/
-*.log
 /cache/
 /libraries/
 /versions/
 /crash-reports/
+/.paper/
 
-# Player data and stats
-**/playerdata/
-**/stats/
-**/advancements/
+# Per server verschillend (spelers, bans, ops, whitelist)
+/ops.json
+/whitelist.json
+/banned-ips.json
+/banned-players.json
+/usercache.json
 
-# Plugin databases and local states
+# Plugin-data (spelersgegevens, databases, caches, server-ID's)
 *.db
 *.sqlite
 *.sqlite3
+plugins/*.lock
+plugins/.*.lock
+plugins/LuckPerms/libs/
+plugins/LuckPerms/translations/
+plugins/NativePackets/cache/
+plugins/spark/tmp/
+plugins/bStats/
+plugins/pStats/
+plugins/vision-core/balances.yml
+plugins/vision-core/hearts.yml
+plugins/VisionStands/stands.yml
+# Werelden en anchors die je op de server aanmaakt (/mv create) blijven daar
+plugins/Multiverse-Core/worlds.yml
+plugins/Multiverse-Core/anchors.yml
 
-# Environment and secrets
+# Omgeving en geheimen
 .env
 *.pem

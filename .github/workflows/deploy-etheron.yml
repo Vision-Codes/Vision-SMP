@@ -1,0 +1,63 @@
+# Zet bij elke push naar main de plugins en configs op de Etheron-server (via SFTP).
+# Alleen bestanden die in git staan gaan mee; werelden en spelersdata op de server
+# blijven dus staan. Er wordt niets verwijderd op de server.
+#
+# Nodig in GitHub: Settings > Secrets and variables > Actions
+#   SFTP_HOST, SFTP_PORT, SFTP_USER, SFTP_PASSWORD   (staan in het Etheron-paneel)
+# Optioneel, voor een automatische herstart (Pterodactyl-paneel > Account > API Credentials):
+#   PANEL_URL (bv. https://panel.etheron.nl), PANEL_API_KEY, PANEL_SERVER_ID
+name: Deploy naar Etheron
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency: deploy-etheron
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: lftp installeren
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq lftp
+
+      - name: Uploaden via SFTP
+        env:
+          SFTP_HOST: ${{ secrets.SFTP_HOST }}
+          SFTP_PORT: ${{ secrets.SFTP_PORT }}
+          SFTP_USER: ${{ secrets.SFTP_USER }}
+          LFTP_PASSWORD: ${{ secrets.SFTP_PASSWORD }}
+        # server.properties en de Paper-jar beheert het paneel zelf, die slaan we over
+        run: |
+          lftp --env-password -u "$SFTP_USER" -p "${SFTP_PORT:-2022}" "sftp://$SFTP_HOST" -e "
+            set sftp:auto-confirm yes
+            set net:max-retries 3
+            mirror --reverse --verbose \
+              --exclude-glob .git/ \
+              --exclude-glob .github/ \
+              --exclude-glob .gitignore \
+              --exclude-glob README.md \
+              --exclude-glob '*.bat' \
+              --exclude-glob server.properties \
+              --exclude-glob server.jar --exclude-glob 'paper-*.jar' \
+              . .
+            bye
+          "
+
+      - name: Server herstarten
+        env:
+          PANEL_URL: ${{ secrets.PANEL_URL }}
+          PANEL_API_KEY: ${{ secrets.PANEL_API_KEY }}
+          PANEL_SERVER_ID: ${{ secrets.PANEL_SERVER_ID }}
+        run: |
+          if [ -z "$PANEL_API_KEY" ]; then
+            echo "Geen PANEL_API_KEY ingesteld: herstart de server zelf via het paneel."
+            exit 0
+          fi
+          curl -fsS -X POST "$PANEL_URL/api/client/servers/$PANEL_SERVER_ID/power" \
+            -H "Authorization: Bearer $PANEL_API_KEY" \
+            -H "Content-Type: application/json" -H "Accept: application/json" \
+            -d '{"signal":"restart"}'
