@@ -1,0 +1,16 @@
+name: VisionTemplate
+version: '${version}'
+main: nl.codebyvision.template.VisionTemplate
+api-version: '1.21'
+author: Code by Vision
+description: '${description}'
+
+commands:
+  template:
+    description: Info over de plugin, of herlaad de config.
+    usage: /template [reload]
+
+permissions:
+  template.admin:
+    description: Gebruik /template reload.
+    default: op

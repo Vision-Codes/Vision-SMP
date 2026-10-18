@@ -30,7 +30,7 @@ jobs:
           SFTP_PORT: ${{ secrets.SFTP_PORT }}
           SFTP_USER: ${{ secrets.SFTP_USER }}
           LFTP_PASSWORD: ${{ secrets.SFTP_PASSWORD }}
-        # server.properties en de Paper-jar beheert het paneel zelf, die slaan we over
+        # server.jar beheert het paneel zelf, die slaan we over (server-port zet het paneel bij elke start goed)
         # --no-perms: het SFTP van Pterodactyl staat chmod niet toe
         run: |
           lftp --env-password -u "$SFTP_USER" -p "${SFTP_PORT:-2022}" "sftp://$SFTP_HOST" -e "
@@ -39,10 +39,10 @@ jobs:
             mirror --reverse --verbose --no-perms \
               --exclude-glob .git/ \
               --exclude-glob .github/ \
+              --exclude-glob src/ \
               --exclude-glob .gitignore \
               --exclude-glob README.md \
               --exclude-glob '*.bat' \
-              --exclude-glob server.properties \
               --exclude-glob server.jar --exclude-glob 'paper-*.jar' \
               . .
             bye

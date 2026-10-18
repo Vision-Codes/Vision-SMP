@@ -25,9 +25,14 @@ The Big Vision SMP RP
 Je lokale server maakt bij de eerste start een eigen wereld aan. Wil je met de echte wereld testen,
 download dan een backup uit het Etheron-paneel en zet die in `world/`.
 
+## Eigen plugins
+
+De broncode staat in `src/`. Een nieuwe plugin maak je met `src/new-plugin.ps1`, bouwen met
+`src/gradlew build` (zet de jar in `plugins/`). Zie `src/README.md`.
+
 ## Let op
 
 - Een plugin weghalen uit git haalt hem **niet** van de server. Verwijder de jar ook in het paneel.
-- `server.properties` en de server-jar worden niet uitgerold; die beheer je in het paneel
+- `server.properties` wordt wel uitgerold (poort en IP zet het paneel zelf goed). De server-jar niet; die beheer je in het paneel
   (Startup: MINECRAFT VERSION `26.2`).
 - Plugin-code aangepast? Dan is een herstart nodig. `/reload` niet gebruiken.
