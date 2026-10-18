@@ -36,9 +36,11 @@ subprojects {
     }
 
     // Kopieert de jar naar ../plugins, zodat je lokale server (en na een merge Etheron) hem oppakt
+    // Untracked: plugins/ also holds server data (databases of other plugins) that Gradle must not scan
     val deploy = tasks.register<Copy>("deploy") {
         from(tasks.named("jar"))
         into(rootDir.resolve("../plugins"))
+        doNotTrackState("plugins/ contains files of the running server")
     }
     if (project.name != "vision-template") {
         tasks.named("build") { finalizedBy(deploy) }
