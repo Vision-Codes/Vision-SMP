@@ -8,6 +8,10 @@
 /iris*/
 *.mca
 
+# Server-jar: download Paper 26.2 zelf en sla op als server.jar (zie README)
+/server.jar
+/paper-*.jar
+
 # Wordt door Paper bij het opstarten zelf gedownload/aangemaakt
 /logs/
 /cache/

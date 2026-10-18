@@ -42,7 +42,7 @@ jobs:
               --exclude-glob README.md \
               --exclude-glob '*.bat' \
               --exclude-glob server.properties \
-              --exclude-glob 'paper-*.jar' \
+              --exclude-glob server.jar --exclude-glob 'paper-*.jar' \
               . .
             bye
           "

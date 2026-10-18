@@ -8,6 +8,8 @@ The Big Vision SMP RP
 | `main` | De Etheron-server (live). Elke push naar `main` wordt automatisch uitgerold. |
 | jouw eigen branch | Je lokale testserver |
 
+0. Eenmalig: download **Paper 26.2** van https://papermc.io/downloads/paper (bij "older versions"),
+   zet hem in de map van de repo en hernoem hem naar `server.jar`. Gebruik geen 26.3: de custom models werken daar niet.
 1. Maak een eigen branch vanaf `main`: `git switch main && git pull && git switch -c mijn-feature`
 2. Start je lokale server met `start.bat` en test je wijziging.
 3. Push je branch en open een pull request naar `main`.
@@ -26,5 +28,6 @@ download dan een backup uit het Etheron-paneel en zet die in `world/`.
 ## Let op
 
 - Een plugin weghalen uit git haalt hem **niet** van de server. Verwijder de jar ook in het paneel.
-- `server.properties` en de Paper-jar worden niet uitgerold; die beheer je in het paneel.
+- `server.properties` en de server-jar worden niet uitgerold; die beheer je in het paneel
+  (Startup: MINECRAFT VERSION `26.2`).
 - Plugin-code aangepast? Dan is een herstart nodig. `/reload` niet gebruiken.
