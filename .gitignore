@@ -49,3 +49,4 @@ plugins/Multiverse-Core/anchors.yml
 # Omgeving en geheimen
 .env
 *.pem
+/.idea
