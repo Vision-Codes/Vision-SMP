@@ -52,9 +52,24 @@ final class HubCommand implements CommandExecutor, TabCompleter {
                         "z", String.valueOf(location.getBlockZ())));
             }
             case "portal" -> portal(sender, args);
+            case "build" -> build(sender);
             default -> sender.sendMessage(plugin.message("usage"));
         }
         return true;
+    }
+
+    private void build(CommandSender sender) {
+        if (!(sender instanceof Player player)) {
+            sender.sendMessage(plugin.message("players-only"));
+            return;
+        }
+        Mode mode = plugin.modeOf(player.getWorld());
+        if (mode == null || !mode.name().equals(plugin.getConfig().getString("hub-mode", "hub"))) {
+            sender.sendMessage(plugin.message("build-wrong-world"));
+            return;
+        }
+        int portals = new HubBuilder(plugin).build(player.getLocation());
+        sender.sendMessage(plugin.message("hub-built", "portals", String.valueOf(portals)));
     }
 
     private void sendToHub(Player player) {
@@ -105,7 +120,7 @@ final class HubCommand implements CommandExecutor, TabCompleter {
             return List.of();
         }
         return switch (args.length) {
-            case 1 -> List.of("pos1", "pos2", "portal", "reload");
+            case 1 -> List.of("build", "pos1", "pos2", "portal", "reload");
             case 2 -> args[0].equalsIgnoreCase("portal") ? List.of("create", "remove", "list") : List.of();
             case 3 -> args[1].equalsIgnoreCase("remove") ? List.copyOf(plugin.portals().all().keySet()) : List.of();
             case 4 -> args[1].equalsIgnoreCase("create") ? List.copyOf(plugin.modes().keySet()) : List.of();

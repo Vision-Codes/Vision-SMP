@@ -12,10 +12,12 @@ import net.kyori.adventure.text.minimessage.MiniMessage;
 import org.bukkit.Bukkit;
 import org.bukkit.GameMode;
 import org.bukkit.Location;
+import org.bukkit.Particle;
 import org.bukkit.World;
 import org.bukkit.command.PluginCommand;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.util.BoundingBox;
 
 public final class VisionHub extends JavaPlugin {
 
@@ -36,6 +38,24 @@ public final class VisionHub extends JavaPlugin {
         pluginCommand.setTabCompleter(command);
 
         getServer().getPluginManager().registerEvents(new HubListener(this), this);
+        getServer().getScheduler().runTaskTimer(this, this::showPortals, 20, 10);
+    }
+
+    /** Particles in every portal opening, so players can see where to walk through. */
+    private void showPortals() {
+        if (!getConfig().getBoolean("portal-particles", true)) {
+            return;
+        }
+        for (PortalManager.Portal portal : portals.all().values()) {
+            World world = Bukkit.getWorld(portal.world());
+            if (world == null || world.getPlayers().isEmpty()) {
+                continue;
+            }
+            BoundingBox box = portal.box();
+            Location center = box.getCenter().toLocation(world);
+            int count = (int) Math.min(40, Math.max(4, box.getVolume() * 2));
+            world.spawnParticle(Particle.PORTAL, center, count, box.getWidthX() / 3, box.getHeight() / 3, box.getWidthZ() / 3, 0.2);
+        }
     }
 
     void reload() {

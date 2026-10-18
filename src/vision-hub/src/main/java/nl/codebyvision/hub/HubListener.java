@@ -11,6 +11,7 @@ import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.block.BlockPlaceEvent;
+import org.bukkit.event.entity.CreatureSpawnEvent;
 import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.event.entity.FoodLevelChangeEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
@@ -109,7 +110,7 @@ final class HubListener implements Listener {
         player.sendMessage(plugin.message("mode-joined", "mode", mode.name()));
     }
 
-    // Protected modes (hub, parkour): no building, no damage, no hunger
+    // Protected modes (hub, parkour): no building, no damage, no hunger, no natural mob spawns
 
     @EventHandler(ignoreCancelled = true)
     public void onBreak(BlockBreakEvent event) {
@@ -133,6 +134,13 @@ final class HubListener implements Listener {
         event.setCancelled(true);
         if (event.getCause() == EntityDamageEvent.DamageCause.VOID) {
             player.teleportAsync(player.getWorld().getSpawnLocation());
+        }
+    }
+
+    @EventHandler(ignoreCancelled = true)
+    public void onSpawn(CreatureSpawnEvent event) {
+        if (event.getSpawnReason() == CreatureSpawnEvent.SpawnReason.NATURAL && isProtectedWorld(event.getLocation().getWorld())) {
+            event.setCancelled(true);
         }
     }
 

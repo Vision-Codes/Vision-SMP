@@ -3,6 +3,9 @@
 # Spelers gaan bij het joinen altijd naar de hub
 join-at-hub: true
 
+# Deeltjes in de portals, zodat spelers zien waar ze doorheen kunnen
+portal-particles: true
+
 # Welke modus de hub is (/hub stuurt je naar de spawn van de eerste wereld)
 hub-mode: hub
 
@@ -10,7 +13,7 @@ hub-mode: hub
 # worlds:    de werelden van die modus (maak ze aan met /mv create). De eerste is waar een portal je heen stuurt
 #            (de plek waar je de modus verliet, of anders de spawn van die wereld).
 # gamemode:  survival, adventure, creative of spectator
-# protected: geen bouwen, geen schade en geen honger (behalve met permissie hub.build)
+# protected: geen bouwen, geen schade, geen honger en geen mobs (behalve met permissie hub.build)
 modes:
   hub:
     worlds: [hub]
@@ -38,7 +41,9 @@ messages:
   players-only: "<red>Dit kan alleen in-game."
   no-permission: "<red>Daar heb je geen rechten voor."
   reloaded: "<green>Config herladen."
-  usage: "Gebruik: /hub, /hub pos1, /hub pos2, /hub portal create <naam> <modus>, /hub portal remove <naam>, /hub portal list, /hub reload"
+  build-wrong-world: "<red>Ga in de hub-wereld staan. De hub wordt rond jouw plek gebouwd."
+  hub-built: "<green>Hub gebouwd met <portals> portals. De spawn staat aan de zuidkant."
+  usage: "Gebruik: /hub, /hub build, /hub pos1, /hub pos2, /hub portal create <naam> <modus>, /hub portal remove <naam>, /hub portal list, /hub reload"
   pos-set: "<pos> gezet op <x>, <y>, <z>."
   select-first: "<red>Zet eerst pos1 en pos2 in dezelfde wereld (/hub pos1, /hub pos2)."
   unknown-mode: "<red>Onbekende modus: <mode>."
