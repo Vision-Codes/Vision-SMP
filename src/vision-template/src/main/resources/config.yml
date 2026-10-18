@@ -1,0 +1,10 @@
+# Na een aanpassing: /template reload (geen herstart nodig)
+welcome-on-join: true
+
+# Teksten in MiniMessage-opmaak: https://docs.advntr.dev/minimessage/format.html
+messages:
+  prefix: "<gold>[Template]</gold> "
+  info: "Deze plugin werkt. Gebruik <yellow>/template reload</yellow> na een config-wijziging."
+  welcome: "Welkom op de server!"
+  reloaded: "<green>Config herladen."
+  no-permission: "<red>Daar heb je geen rechten voor."

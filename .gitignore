@@ -50,3 +50,8 @@ plugins/Multiverse-Core/anchors.yml
 .env
 *.pem
 /.idea
+
+# Gradle (broncode in src/)
+/src/.gradle/
+/src/**/build/
+/src/.kotlin/
